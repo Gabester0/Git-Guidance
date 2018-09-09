@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+p {
+    width: 500px;
+    margin: auto;
+}
+
+#lets_get_started {
+    color: darkcyan;
+}
+
+.main-section ul li {
+    list-style: none;
+    text-align: left;
+    width: 500px;
+    margin: auto;
+}
