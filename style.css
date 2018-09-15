@@ -19,10 +19,6 @@ body {
     flex-direction: column;
 }
 
-p {
-    width: 500px;
-    margin: auto;
-}
 
 #lets_get_started {
     color: darkcyan;
@@ -30,15 +26,12 @@ p {
 
 .main-section {
     padding: 100px;
-
-    grid-column: 4/10;
+    grid-column: 3/9;
     width: 100%;
-
 }
 
 .main-section ul li {
     list-style: none;
     text-align: left;
-    width: 500px;
     margin: auto;
 }
