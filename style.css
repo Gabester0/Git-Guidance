@@ -1,9 +1,15 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
     text-align: center;
+}
+
+#top {
+    width: 60%;
+    margin: auto;
 }
 
 #main-doc {
@@ -30,8 +36,17 @@ body {
     width: 100%;
 }
 
-.main-section ul li {
-    list-style: none;
-    text-align: left;
-    margin: auto;
+header {
+    font-size: 140%;
 }
+
+.secondaryHeader {
+    font-size: 115%;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.main-section ul li {
+    text-align: left;
+}
+
