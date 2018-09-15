@@ -26,14 +26,14 @@
         [x] Gabe Story #2: Create a What I Am Assuming section (You already have a code editor installed and are
             comfortable writing code in it; You already have created a Github account)
         [x] Gabe Story #3: Cover: how to find your terminal (https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-[] Gabe Story #4: Cover: how to navigate your code editor (cd, .. to go up, dir name to go into,
+        [x] Gabe Story #4: Cover: how to navigate your code editor (cd, .. to go up, dir name to go into,
             tab to auto-complete file name, dir to see folder/file names)
 [] Gabe Story #5: Cover: linking your local machine to your git repository.  
 
-[] Gabe Story #6: Each item in this GitGuide should be 2 parts.  A introduction and simple definition
+        [x] Gabe Story #6: Each item in this GitGuide should be 2 parts.  A introduction and simple definition
             of terms.  A walkthrough of the steps involved with this item and screenshots of terminal
 [] Gabe Story #7:  My Guide will cover at least the following steps:
-[] Gabe Story #8: Navigating the fileSystem
+        [x] Gabe Story #8: Navigating the fileSystem
 [] Gabe Story #9: Initiating a local GIT repository (cover mkdir command here) And also cover that
             by running git init you are started off with master branch.  
 [] Gabe Story #10: The staging area and what it means for your code to be in the staging 
