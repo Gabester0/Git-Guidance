@@ -5,6 +5,9 @@ html {
 
 body {
     text-align: center;
+    line-height: 200%;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 #top {
@@ -20,28 +23,28 @@ body {
 
 #navbar {
     grid-column: 1/3;
-    width: 100%;
+    position: fixed;
+    top: 50px;
+    left: 25px;
     display: flex;
     flex-direction: column;
-}
-
-
-#lets_get_started {
-    color: darkcyan;
+    text-align: left;
 }
 
 .main-section {
-    padding: 100px;
+    padding: 50px;
     grid-column: 3/9;
     width: 100%;
 }
 
 header {
-    font-size: 140%;
+    font-size: 110%;
+    font-weight: 700;
 }
 
 .secondaryHeader {
-    font-size: 115%;
+    font-size: 95%;
+    font-weight: 600;
     text-align: left;
     margin-left: 25px;
 }
@@ -50,3 +53,8 @@ header {
     text-align: left;
 }
 
+p,
+img,
+ul {
+    padding: 20px;
+}

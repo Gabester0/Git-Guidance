@@ -23,21 +23,21 @@
 
         <nav id="navbar">
             <header>Gitting Around</header>
-            <span><a href="#top">Top</a></span>
-            <span><a href="#introduction_and_assumptions">Some Assumptions</a></span>
-            <span><a href="#introduction_and_installation">Introduction and installation</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#creating_and_initiating">Creating and Initiating</a></span>
-            <span><a href="#linking_github_remotely">Linking Github Remotely</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
-            <span><a href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link-top" href="#top">Top</a></span>
+            <span><a class="nav-link" href="#introduction_and_assumptions">Introduction and Assumptions</a></span>
+            <span><a class="nav-link" href="#introduction_and_installation">Introduction and installation</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#creating_and_initiating">Creating and Initiating</a></span>
+            <span><a class="nav-link" href="#linking_github_remotely">Linking Github Remotely</a></span>
+            <!-- <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
+            <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span> -->
         </nav>
     
         <section id="introduction_and_assumptions" class="main-section">
@@ -45,8 +45,10 @@
             <p>Thanks for looking at my introductory Git Guide.  I recently went from zero
                 to greater than zero with regards to my Git skills thanks to the guidance 
                 of others and I want to help others do the same thing.  I hope you find this
-                guide helpful.  
-                <br/><br/>
+                guide helpful.  This is not a comprehensive guide to all beginner skills.  This
+                is simply a guide that can walk you through how to implement GIT into your 
+                regular workflow with minimal fuss and command memorization.  
+                  
             </p>
                 <header class="secondaryHeader">I am assuming the following things about you:</header>
                     <ul>
@@ -79,7 +81,7 @@
                         your code.  And it allows simple efficient social coding.  If you are 
                         going to work professionally with code you will probably need to learn 
                         it.   
-                    <br/>
+                     
                         So, first thing is downloading GIT.  
                         <a href="https://git-scm.com/download/win">GIT for Windows</a>  Once 
                         the download finishes choose a folder to save it to.  When this is 
@@ -90,7 +92,7 @@
                         you want the a desktop shortcut, a GIT GUI (or graphical user interface), 
                         and other options.  I recommend doing whatever you want but don't unselect 
                         the automatic options.  Next you can change the name of the folder.  Why bother?
-                    <br/>
+                     
                         Now we choose wether we want to use the GIT Bash (terminal) only or 
                         Windows Command Prompt (the windows terminal).  There is a third option that you 
                         will want to ignore becauseit is the most risky option.  The Git Bash is a GIT 
@@ -111,54 +113,120 @@
         
         <section id="navigating_the_terminal" class="main-section">
             <header>Navigating The Terminal</header>
-            <article>Say Hello To Your Terminal!
-                <br>
-                <img src="WelcomeToTerminal.png">
-                <br>
-                This is a terminal.  It is also called the CLI or Command Line Interface.  A terminal looks 
-                like an ancient computer.  But in spite of the fact that it is a total blast from the past
-                it is going to rock your developing mind. 
+            <article>
+                <p>
+                    Say Hello To Your Terminal!
+                </p>
+                     
+                    <img alt="A blank terminal" src="WelcomeToTerminal.png">
 
-                If you look at the screen you will see <code>'C:\Users\Gabe'</code>.  This actually mirrors the folder
-                structure of your computer.  We are in the LocalDisk(C), the Users folder, and I am logged in 
-                to my Personal Computer so we see my name username (which is my name) Gabe.  
-                <br>
+                 
+                <p>
+                    This is a terminal.  It is also called the CLI or Command Line Interface.  A terminal looks 
+                    like an ancient computer.  But in spite of the fact that it is a total blast from the past
+                    it is going to rock your developing mind. 
+    
+                    If you look at the screen you will see <code>'C:\Users\Gabe'</code>.  This actually mirrors the folder
+                    structure of your computer.  We are in the LocalDisk(C), the Users folder, and I am logged in 
+                    to my Personal Computer so we see my name username (which is my name) Gabe.  
+                     
+                </p>
+
                 <!--dir Command-->
-                Ok how do we move around and do anything?  We can move around by selecting the folder we want
-                to go to.  It is helpful to know the folder name.  But if you didn't memorize all the folders
-                inside your computer it isn't quite so simple.  But we have a command to see where you are.  Type 
-                <code>dir</code> into the terminal and hit enter.  
-                <br>
-                <img src="dirCmd.png">
-                The <code>dir</code> command is short for directory.  It shows you the contents of the directory
-                (or folder) you are currently in.  So now you know what all your folder names are.  
-                <!--cd Command-->
-                So lets pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
-                Directory' and FreeCodeCamp is the name of the folder I selected.  You can always prompt the terminal to
-                auto-complete the folder name by hitting tab.  If the terminal has options and it guessed wrong you can 
-                keep hitting tab until you see the right folder name.  When you do hit enter. 
-                <br/>
-                <img src="changeDirCmd.png">
-                <br/>
-                Now you see the list of folder names includes Free Code Camp.  This list of folder names just
-                tells you where in your folders you are.  The last folder listed is the one you are currently in. 
-                You navigated in the terminal!  To go back one level type <code>cd ..</code>.  This time instead of 
-                using the change directory command to go into a folder you are using it to back out of your folder you
-                are in to get to the parent folder.  
-                <br/>
-                <img src="changeDirUpCmd.png">
-                <br/>
-                Now you are back in the Gabe folder where we started.  This is how you navigate around the 
-                terminal.  When you want to use GIT on a group of files you want to navigagte to the folder
-                in question.  See you in the next section.  
+                <p>
+                    Ok how do we move around and do anything?  We can move around by selecting the folder we want
+                    to go to.  It is helpful to know the folder name.  But if you didn't memorize all the folders
+                    inside your computer it isn't quite so simple.  But we have a command to see where you are.  Type 
+                    <code>dir</code> into the terminal and hit enter.  
+                </p>
+                     
+                    <img alt="The dir command" src="dirCmd.png">
+
+                <p>
+                    The <code>dir</code> command is short for directory.  It shows you the contents of the directory
+                    (or folder) you are currently in.  So now you know what all your folder names are.  
+                    <!--cd Command-->
+                    So lets pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
+                    Directory' and FreeCodeCamp is the name of the folder I selected.  You can always prompt the terminal to
+                    auto-complete the folder name by hitting tab.  If the terminal has options and it guessed wrong you can 
+                    keep hitting tab until you see the right folder name.  When you do hit enter. 
+                </p>
+                     
+                    <img alt="cd command" src="changeDirCmd.png">
+
+                 
+                <p>
+                    Now you see the list of folder names includes Free Code Camp.  This list of folder names just
+                    tells you where in your folders you are.  The last folder listed is the one you are currently in. 
+                    You navigated in the terminal!  To go back one level type <code>cd ..</code>.  This time instead of 
+                    using the change directory command to go into a folder you are using it to back out of your folder you
+                    are in to get to the parent folder.  
+                </p>
+                     
+                    <img alt="cd up command" src="changeDirUpCmd.png">
+            
+                 
+                <p>
+                    Now you are back in the Gabe folder where we started.  This is how you navigate around the 
+                    terminal.  When you want to use GIT on a group of files you want to navigagte to the folder
+                    in question.  See you in the next section.  
+                </p>
             </article>
         </section>
 
 
         <section id="creating_and_initiating" class="main-section">
             <header>Creating and initiating</header>
-            <p></p>
+            <p>So now we know how to navigate around our files and we have GIT installed.  So first we are going
+                create a directory.  So pick a location for this new file.  
+            </p>
+            <p>Now use your <code>cd</code> command and navigate to the folder where you want your new folder to 
+                be located.  Now enter <code>mkdir DemoFolder</code>.  DemoFolder should be whatever you want your 
+                new folder to be named. 
+            </p> 
+             
+            <img alt="mkdir command" src="mkdirCmd.png">
+             
+            <p>
+            And now we see a summary below.  We see a line that tells us what our folders parent folders are.
+            And below this we see a summary of our last time we made changes to (or created in this case) our 
+            folder and the name of our new folder DemoFolder.  
+            Now we can go into the folder we created.  Now that we are in our folder we can initiate GIT.  We
+            do this with the <code>git init</code> command. </p>
+             
+            <img alt="git init command" src="gitInitCmd.png">
+             
+            <p>
+            What does this mean?  On a technical level I don't know entirely.  Don't overthink it.  Basically 
+            your should think of this as similar to installing an app on your device.  You have to do it to use it.  
+            With GIT you have to install it For every device you use it on.  And you have to initiate it in every
+            folder you want to use it with.  As a rule you will pick your project's primary folder that will 
+            contain all the files and folders associated with it and initiate GIT in that folder.   
+            </p>
+            <p>
+                So initiating GIT basically adds GIT to the folder your are in and this will allow you to use
+                GIT to track your files inside this folder.  <code>git init</code> also creates a Master branch 
+                for you automatically.  So what are branches?  Basically branches are what allow you to have 
+                and keep organized multiple versions of your code.  The Master branch is the default branch.  
+                Typically you want to keep your Master branch uncluttered.  If you want to try something that 
+                might not work you make a separate branch to mess with it.  Each time you make a branch you 
+                are making a duplicate of the branch you were in.  Then you write some code, decide if you 
+                are keeping it or ditching it.  You can merge it back into a branch which will adopt your changes.  
+            </p>
+            <p>
+            So how do we know we have a master branch?
+            Let us use the <code>git status</code> command.  
+            </p>
+            <img alt="GIT status command" src="gitStatusCmd.png">
+            <p>
+            This is a really useful versatile command.  It will tell you what is going on with regards to GIT.
+            For example we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
+            active because we see a status update.  We are on Branch Master.  No Commits yet.  Commits are how 
+            changes are packaged up.  And below that we see there is nothing to commit.  Since we just created 
+            an empty folder that seems about right!
+            </p>
         </section>
+
 
         <section id="linking_github_remotely" class="main-section">
             <header>Linking Github Remotely</header>
