@@ -73,7 +73,7 @@
         <section id="introduction_and_installation" class="main-section">
             <header>Introduction and installation</header>
                 <article>
-                    <p>All right lets get going!  What is GIT?  It is a free open source 
+                    <p>All right lets get going!  What is GIT?  It is a free open-source 
                         Version Control system.  What does that mean for you?  There are 
                         a lot of different really good reasons to use GIT.  The simplest 
                         answer in my opinion is that GIT allows you to fearlessly play, 
@@ -82,28 +82,66 @@
                         going to work professionally with code you will probably need to learn 
                         it.   
                      
-                        So, first thing is downloading GIT.  
-                        <a href="https://git-scm.com/download/win">GIT for Windows</a>  Once 
+                        So, first thing is downloading <a href="https://git-scm.com/download/win">GIT 
+                        for Windows</a></p>
+
+                        <img src="images/Download.png" alt="install starting image">
+                        
+                        <p>Once 
                         the download finishes choose a folder to save it to.  When this is 
                         finished go to the file where you saved it to and click on the executable
-                        file.  This will initiate the installation process.  Once you accept the 
+                        file.  This will initiate the installation process. </p>
+                        
+                        <img src="images/Install1.png" alt="install terms">
+
+                        <p> Once you accept the 
                         terms it will create a GIT folder in your Programs folder.  You should 
-                        accept the default settings.  Next it will give you some checkboxes for whether
+                        accept the default settings.</p>
+                        
+                        <img src="images/Install2.png" alt="install folder location">
+
+                        <p>Next it will give you some checkboxes for whether
                         you want the a desktop shortcut, a GIT GUI (or graphical user interface), 
                         and other options.  I recommend doing whatever you want but don't unselect 
-                        the automatic options.  Next you can change the name of the folder.  Why bother?
-                     
+                        the automatic options.  </p>
+                        
+                        <img src="images/Install3.png" alt="install options">
+
+                        <p>Next you can choose your a folder name in the Start Menu.  This is really
+                            just where you would go to look for GIT.  If you are like me simple is 
+                            better and you will just leave the file name GIT.  </p>
+
+                        <img src="images/Install4.png" alt="Start Folder">
+
+                        <p>
                         Now we choose wether we want to use the GIT Bash (terminal) only or 
                         Windows Command Prompt (the windows terminal).  There is a third option that you 
-                        will want to ignore becauseit is the most risky option.  The Git Bash is a GIT 
+                        will want to ignore because it is the most risky option.  The Git Bash is a GIT 
                         terminal that allows you 
                         to enter commands.  This option is the safest.  I would stick with the default 
                         Windows terminal because this lets you use either the GIT Bash or the Windows
-                        Terminal and is nearly as safe.  Now just leave the rest of the options on the 
-                        default settings and click next until it begins installation.  Once this installs
-                        you can find and open the GIT Bash or the Command Prompt.  If you are using 
-                        Visual Studio Code you can actually just open that and then hit Control - Plus - 
-                        Backtick.  (The back-tick is the key to the left of the 1 key.)  This opens the
+                        Terminal and is nearly as safe.  
+                        </p>
+                        
+                        <img src="images/Install5.png" alt="Terminal Options">
+
+                        <p>
+                        Now just leave the rest of the options on the 
+                        default settings and click next until it begins installation.  If any 
+                        of these choices matter I don't know about it and you can teach me!
+                        </p>
+
+                        <img src="images/Install12.png" alt="Installing Now">
+
+                        <p>
+                        Once the installation finishes
+                        you can select the checkbox that says to open the GIT Bash.  </p>
+                        
+                        <img src="images/‌InstallSuccess.png" alt="Installation Succesful">
+
+                        <p>If you are using 
+                        Visual Studio Code you can actually just open the Code editor and type Control - Plus - 
+                        Back-tick.  (The back-tick is the key to the left of the 1 key.)  This opens the
                         integrated Visual Studio terminal.  
                     </p>
 
@@ -148,12 +186,12 @@
                     <!--cd Command-->
                     So lets pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
                     Directory' and FreeCodeCamp is the name of the folder I selected.  You can always prompt the terminal to
-                    auto-complete the folder name by hitting tab.  If the terminal has options and it guessed wrong you can 
-                    keep hitting tab until you see the right folder name.  When you do hit enter. 
+                    auto-complete the folder name by hitting Tab.  If the terminal has options and it guessed wrong you can 
+                    keep hitting tab until you see the right folder name.  When you see the correct folder name 
+                    or you finish typing it hit Enter. 
                 </p>
                      
                     <img alt="cd command" src="changeDirCmd.png">
-
                  
                 <p>
                     Now you see the list of folder names includes Free Code Camp.  This list of folder names just
@@ -230,7 +268,15 @@
 
         <section id="linking_github_remotely" class="main-section">
             <header>Linking Github Remotely</header>
-            <p></p>
+            <p>So in this section we are going to use the <code>git config</code> command to set up GIT. 
+            <code>config</code> is obviously an abbreviation for configure.  So we are telling GIT that we
+            want to configure our global settings.  So we are going to first enter this command <code>git 
+            config --global user.name "User name"</code> with your name in the quotation marks.  Then
+            hit Enter.  As long as you don't see an error command this worked.  Now we enter <code>git 
+            config --global user.email user@example.com</code> with your email address. </p>
+
+            <img src="images/Config1.png" alt="Configuring GIT">
+
         </section>
         <!--
         <section class="main-section">

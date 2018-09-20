@@ -31,7 +31,7 @@
 
         [x] Gabe Story #6: Each item in this GitGuide should be 2 parts.  A introduction and simple definition
             of terms.  A walkthrough of the steps involved with this item and screenshots of terminal
-[] Gabe Story #7:  My Guide will cover at least the following steps:
+        [x] Gabe Story #7:  My Guide will cover at least the following steps:
         [x] Gabe Story #8: Navigating the fileSystem
         [x] Gabe Story #9: Initiating a local GIT repository (cover mkdir command here) And also cover that
             by running git init you are started off with master branch.  
