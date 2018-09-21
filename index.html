@@ -18,25 +18,24 @@
     </header>
     
 
-
     <main id="main-doc">
 
         <nav id="navbar">
             <header>Gitting Around</header>
             <span><a class="nav-link-top" href="#top">Top</a></span>
             <span><a class="nav-link" href="#introduction_and_assumptions">Introduction and Assumptions</a></span>
-            <span><a class="nav-link" href="#introduction_and_installation">Introduction and installation</a></span>
+            <span><a class="nav-link" href="#installation">Installation</a></span>
             <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
             <span><a class="nav-link" href="#creating_and_initiating">Creating and Initiating</a></span>
-            <span><a class="nav-link" href="#Configuring">Configuring</a></span>
             <span><a class="nav-link" href="#adding_and_committing">Adding and Committing</a></span>
-            <!-- <span><a class="nav-link" href="#branching">Branching</a></span>
-            <span><a class="nav-link" href="#creating_a_github_repository">Creating a Github Repository</a></span>
+            <!-- <span><a class="nav-link" href="#branching">Branching</a></span>-->
+            <span><a class="nav-link" href="#Configuring">Configuring</a></span>
+            <!--<span><a class="nav-link" href="#creating_a_github_repository">Creating a Github Repository</a></span>
             <span><a class="nav-link" href="#adding_a_remote">Adding a Remote</a></span>
             <span><a class="nav-link" href="#pushing_your_branch">Pushing your branch</a></span>
             <span><a class="nav-link" href="#pull_request">Pull Request</a></span>
             <span><a class="nav-link" href="#pulling_master">Pulling Master</a></span>
-            <span><a class="nav-link" href="#final_steps">Final Steps</a></span>
+            <span><a class="nav-link" href="#final_steps">Final Steps</a></span>-->
         </nav>
     
         <section id="introduction_and_assumptions" class="main-section">
@@ -69,8 +68,8 @@
 
 
 
-        <section id="introduction_and_installation" class="main-section">
-            <header>Introduction and installation</header>
+        <section id="installation" class="main-section">
+            <header>Installation</header>
                 <article>
                     <p>All right lets get going!  What is GIT?  It is a free open-source 
                         Version Control system.  What does that mean for you?  There are 
@@ -213,33 +212,43 @@
 
 
         <section id="creating_and_initiating" class="main-section">
-            <header>Creating and initiating</header>
-            <p>So now we know how to navigate around our files and we have GIT installed.  So first we are going
+            <header>
+                Creating and initiating
+            </header>
+            
+            <p>
+                So now we know how to navigate around our files and we have GIT installed.  So first we are going
                 create a directory.  So pick a location for this new file.  
             </p>
-            <p>Now use your <code>cd</code> command and navigate to the folder where you want your new folder to 
+
+            <!--mkdir command-->
+            <p>
+                Now use your <code>cd</code> command and navigate to the folder where you want your new folder to 
                 be located.  Now enter <code>mkdir DemoFolder</code>.  DemoFolder should be whatever you want your 
                 new folder to be named. 
             </p> 
              
-            <img alt="mkdir command" src="mkdirCmd.png">
-             
+                <img alt="mkdir command" src="images/creating_and_initiating/mkdirCmd.png">
+            
+            <!--git init command-->
             <p>
-            And now we see a summary below.  We see a line that tells us what our folders parent folders are.
-            And below this we see a summary of our last time we made changes to (or created in this case) our 
-            folder and the name of our new folder DemoFolder.  
-            Now we can go into the folder we created.  Now that we are in our folder we can initiate GIT.  We
-            do this with the <code>git init</code> command. </p>
-             
-            <img alt="git init command" src="gitInitCmd.png">
-             
-            <p>
-            What does this mean?  On a technical level I don't know entirely.  Don't overthink it.  Basically 
-            your should think of this as similar to installing an app on your device.  You have to do it to use it.  
-            With GIT you have to install it For every device you use it on.  And you have to initiate it in every
-            folder you want to use it with.  As a rule you will pick your project's primary folder that will 
-            contain all the files and folders associated with it and initiate GIT in that folder.   
+                And now we see a summary below.  We see a line that tells us what our folders parent folders are.
+                And below this we see a summary of our last time we made changes to (or created in this case) our 
+                folder and the name of our new folder DemoFolder.  
+                Now we can go into the folder we created.  Now that we are in our folder we can initiate GIT.  We
+                do this with the <code>git init</code> command. 
             </p>
+             
+                <img alt="git init command" src="images/creating_and_initiating/gitInitCmd.png">
+             
+            <p>
+                What does this mean?  On a technical level I don't know entirely.  Don't overthink it.  Basically 
+                your should think of this as similar to installing an app on your device.  You have to do it to use it.  
+                With GIT you have to install it For every device you use it on.  And you have to initiate it in every
+                folder you want to use it with.  As a rule you will pick your project's primary folder that will 
+                contain all the files and folders associated with it and initiate GIT in that folder.   
+            </p>
+            
             <p>
                 So initiating GIT basically adds GIT to the folder your are in and this will allow you to use
                 GIT to track your files inside this folder.  <code>git init</code> also creates a Master branch 
@@ -250,21 +259,106 @@
                 are making a duplicate of the branch you were in.  Then you write some code, decide if you 
                 are keeping it or ditching it.  You can merge it back into a branch which will adopt your changes.  
             </p>
+            
+            <!--git status command-->
             <p>
-            So how do we know we have a master branch?
-            Let us use the <code>git status</code> command.  
+                So how do we know we have a master branch?
+                Let us use the <code>git status</code> command.  
             </p>
-            <img alt="GIT status command" src="gitStatusCmd.png">
+            
+                <img alt="GIT status command" src="images/creating_and_initiating/gitStatusCmd.png">
+            
             <p>
-            This is a really useful versatile command.  It will tell you what is going on with regards to GIT.
-            For example we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
-            active because we see a status update.  We are on Branch Master.  No Commits yet.  Commits are how 
-            changes are packaged up.  And below that we see there is nothing to commit.  Since we just created 
-            an empty folder that seems about right!
+                This is a really useful versatile command.  It will tell you what is going on with regards to GIT.
+                For example we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
+                active because we see a status update.  We are on Branch Master.  No Commits yet.  Commits are how 
+                changes are packaged up.  And below that we see there is nothing to commit.  Since we just created 
+                an empty folder that seems about right!
             </p>
+
         </section>
 
 
+        <section class="main-section">
+            <header id="adding_and_committing">Adding and Committing</header>
+            
+            <p>
+                Now we are ready to start using GIT.  We start by creating a file and writing some code in it.
+                I am just making a really simple index.html file and giving it a title.  
+            </p>
+
+                <img src="images/adding_and_committing/Write_html.png" alt="Write HTML">
+
+            <p>
+                So we wrote code.  Now lets check in with GIT to see what it thinks about this.  So we will
+                use the <code>git status</code> command to check on our new file.  
+            </p>
+
+                <img src="images/adding_and_committing/staging_git_status.png" alt="Git status in staging">
+
+            <p>
+                So we see our new file appear in red.  Everything we saw before after using the <code>git init        
+                </code> command is still there along with text telling us that there are untracked files.  
+                Then it lists the files or file that is untracked.  Below this we see it tells us how to change 
+                this.  This tells us that GIT is aware of the file.  But we haven't asked GIT to track the file
+                for us yet so it isn't.  So let's do that.  You can either use the file name to do this by typing
+                <code>git add index.html</code>.  This way works if you only want to add some files to be tracked
+                but not others.  In our case we will use <code>git add *</code> to add everything to be tracked.  
+                The asterisk is commonly used to denote everything, or all possible in computer science.  
+             </p>
+
+                <img src="images/adding_and_committing/git_add.png" alt="git add all">
+
+            <p>
+                Now we should check the status to see if it really worked.
+            </p>
+
+                <img src="images/adding_and_committing/added_status.png" alt="added status">
+
+            <p>
+                Awesome!  It is green instead of red.  Now GIT is tracking the file.  There is actually a name
+                for this.  Files that are being tracked but are not yet committed are in the "Staging Area."  
+                The proper name for this is "Index;" I find this unhelpful and confusing so I am just going to
+                refer to it as the staging area.   
+                So now you have GIT tracking the file but you are not committed to the file yet.  The staging 
+                area could be thought of like a loading dock.  You have your items you are shipping in the loading
+                dock so they are safely contained.  But you don't have to ship them out.  You can pick what you want
+                from the loading dock to pack on the trucks.  In the same way with GIT you can change your mind and 
+                add, remove, or edit files from the staging area without committing to them. 
+            </p>
+            <p>
+                So lets make a commit.  When you make a commit you are strongly encouraged to include a commit 
+                message.  This is considered a good practice because GIT is often used by teams of developers who 
+                are all working on the same code base so more communication is usually helpful.  There is a way to
+                do this without but why not set good habits and practice writing a short meaninful message about 
+                what your commit will contain.  So we will write <code>git commit -m 'First commit'</code> and 
+                hit Enter.  
+            </p>
+
+                <img src="images/adding_and_committing/commit.png" alt="commit image">
+            
+            <p>
+                And you have executed your first commit!  You will see below <code>[Master (root-commit) 
+                    a084555] First commit</code>.  
+                This is telling you that you have made a commit to the Master Branch.  Then there is a id number
+                for this commit along with the message we wrote.  We also see a summary
+                of what was in the commit.  It says that there were 13 insertions because before there was 
+                no index.html file and now our master branch has this file.  The index.html file is thirteen
+                lines long so GIT counts each line as an insertion.  Now the we have made a commit to the Master
+                branch.  In this process we simply made changes by adding a file.  Then we committed that to 
+                the master branch.  In the next section we will learn about making branches and how that can 
+                allow us to make changes and then get rid of them or keep them without having to remember what
+                all our changes were.  
+                </p>
+
+        </section>
+                        <!--
+        <section class="main-section">
+            <header id="branching">Branching</header>
+            <p></p>
+        </section>
+
+    -->
         <section id="Configuring" class="main-section">
             <header>Configuring</header>
             <p>So in this section we are going to use the <code>git config</code> command to set up GIT. 
@@ -279,17 +373,8 @@
             <p>For the moment that is plenty.  Onward!</p>
         </section>
 
+<!--
 
-
-        <section class="main-section">
-            <header id="adding_and_committing">Adding and Committing</header>
-            <p></p>
-        </section>
-                        <!--
-        <section class="main-section">
-            <header id="branching">Branching</header>
-            <p></p>
-        </section>
         <section class="main-section">
             <header id="creating_a_github_repository">Creating a Github Repository</header>
             <p></p>
