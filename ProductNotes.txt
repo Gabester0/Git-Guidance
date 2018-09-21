@@ -35,7 +35,7 @@
         [x] Gabe Story #8: Navigating the fileSystem
         [x] Gabe Story #9: Initiating a local GIT repository (cover mkdir command here) And also cover that
             by running git init you are started off with master branch.  
-[] Gabe Story #10: The staging area and what it means for your code to be in the staging 
+        [x] Gabe Story #10: The staging area and what it means for your code to be in the staging 
             area along with adding files to the staging area 
 [] Gabe Story #11: Creating a new repository on Github
 [] Gabe Story #5: Cover: linking your local machine to your git repository.  
@@ -51,3 +51,12 @@
 [] Gabe Story #18: Deleting your first branch (now it is really gone.)
 [] Gabe Story #19: Apply the FCC Accessibility steps to this project
                         [x] All img tags have an alt description.
+[] Gabe Story #20: Store all images in organized folders
+            [] All images are stored in images folder
+            [] All links are updated to reflect folder structure
+            [] All images are stored in sub-folders named for the section of the tutorial they are used in.  
+                        [x] Complete + prettify code for Creating and Initiating
+            [] Complete + prettify code for Navigating the terminal
+            [] Complete + prettify code for Installation
+            [] Complete + prettify code for Introduction and assumptions
+            [] Complete + prettify code for Configuring
