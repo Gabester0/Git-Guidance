@@ -28,90 +28,107 @@
             <span><a class="nav-link" href="#navigating_the_terminal">Navigating the Terminal</a></span>
             <span><a class="nav-link" href="#creating_and_initiating">Creating and Initiating</a></span>
             <span><a class="nav-link" href="#adding_and_committing">Adding and Committing</a></span>
-            <!-- <span><a class="nav-link" href="#branching">Branching</a></span>-->
+            <span><a class="nav-link" href="#branching">Branching</a></span>
             <span><a class="nav-link" href="#Configuring">Configuring</a></span>
-            <!--<span><a class="nav-link" href="#creating_a_github_repository">Creating a Github Repository</a></span>
+            <span><a class="nav-link" href="#creating_a_github_repository">Creating a Github Repository</a></span>
             <span><a class="nav-link" href="#adding_a_remote">Adding a Remote</a></span>
             <span><a class="nav-link" href="#pushing_your_branch">Pushing your branch</a></span>
+                <!--
             <span><a class="nav-link" href="#pull_request">Pull Request</a></span>
             <span><a class="nav-link" href="#pulling_master">Pulling Master</a></span>
             <span><a class="nav-link" href="#final_steps">Final Steps</a></span>-->
         </nav>
     
         <section id="introduction_and_assumptions" class="main-section">
+        
             <header>Introduction and Assumptions</header>
-            <p>Thanks for looking at my introductory Git Guide.  I recently went from zero
-                to greater than zero with regards to my Git skills thanks to the guidance 
-                of others and I want to help others do the same thing.  I hope you find this
-                guide helpful.  This is not a comprehensive guide to all beginner skills.  This
-                is simply a guide that can walk you through how to implement GIT into your 
-                regular workflow with minimal fuss and command memorization.  
-                  
-            </p>
-                <header class="secondaryHeader">I am assuming the following things about you:</header>
+                <article>
+                    <p>
+                        Thanks for looking at my introductory Git Guide.  I recently went from zero
+                        to greater than zero with regards to my Git skills thanks to the guidance 
+                        of others and I want to help others do the same thing.  I hope you find this
+                        guide helpful.  This is not a comprehensive guide to all beginner skills.  This
+                        is simply a guide that can walk you through how to implement GIT into your 
+                        regular workflow with minimal fuss and command memorization.    
+                    </p>
+                </article>
+                
+            <header class="secondaryHeader">I am assuming the following things about you:</header>
+                <article>
                     <ul>
-                        <li>You have a computer</li>
-                        <li>You have a code editor installed</li>
-                        <li>If you don't have a code editor installed 
-                            you will go download one and then return</li>
-                        <li>I like Visual Studio Code.  
-                            There are many good ones out there.  
-                            Just pick one you have heard of and try it.  </li>
-                        <li>You know how to write some code of some kind</li>
-                        <li>You have a Github account</li>
-                        <li>If you don't you might as well get one because it is free</li>
-                        <li>This is optional.  
-                            Only half of what we will be covering will be pointless 
-                            if you don't.</li>
-                    </ul>
+                            <li>You have a computer</li>
+                            <li>You have a code editor installed</li>
+                            <li>If you don't have a code editor installed 
+                                you will go download one and then return</li>
+                            <li>I like Visual Studio Code.  
+                                There are many good ones out there.  
+                                Just pick one you have heard of and try it.  </li>
+                            <li>You know how to write some code of some kind</li>
+                            <li>You have a Github account</li>
+                            <li>If you don't you might as well get one because it is free</li>
+                            <li>This is optional.  
+                                Only half of what we will be covering will be pointless 
+                                if you don't.</li>
+                        </ul>
+                </article>    
+
         </section>
 
 
 
         <section id="installation" class="main-section">
+            
             <header>Installation</header>
                 <article>
-                    <p>All right lets get going!  What is GIT?  It is a free open-source 
+                    <p>
+                        All right lets get going!  What is GIT?  It is a free open-source 
                         Version Control system.  What does that mean for you?  There are 
                         a lot of different really good reasons to use GIT.  The simplest 
                         answer in my opinion is that GIT allows you to fearlessly play, 
                         change, and experiment with your code without any fear of breaking
                         your code.  And it allows simple efficient social coding.  If you are 
                         going to work professionally with code you will probably need to learn 
-                        it.   
-                     
-                        So, first thing is downloading <a href="https://git-scm.com/download/win">GIT 
-                        for Windows</a></p>
+                        it.  So, first thing is downloading <a href="https://git-scm.com/download/win">GIT 
+                        for Windows</a>
+                    </p>
 
-                        <img src="images/Download.png" alt="install starting image">
+                        <img src="images/installation/Download.png" alt="install starting image">
                         
-                        <p>Once 
+                    <p>
+                        Once 
                         the download finishes choose a folder to save it to.  When this is 
                         finished go to the file where you saved it to and click on the executable
-                        file.  This will initiate the installation process. </p>
+                        file.  This will initiate the installation process. 
+                    </p>
                         
-                        <img src="images/Install1.png" alt="install terms">
+                        <img src="images/installation/Install1.png" alt="install terms">
 
-                        <p> Once you accept the 
+                    <p> 
+                        Once you accept the 
                         terms it will create a GIT folder in your Programs folder.  You should 
-                        accept the default settings.</p>
+                        accept the default settings.  
+                    </p>
                         
-                        <img src="images/Install2.png" alt="install folder location">
+                        <img src="images/installation/Install2.png" alt="install folder location">
 
-                        <p>Next it will give you some checkboxes for whether
+                    <p>
+                        Next it will give you some checkboxes for whether
                         you want the a desktop shortcut, a GIT GUI (or graphical user interface), 
                         and other options.  I recommend doing whatever you want but don't unselect 
-                        the automatic options.  </p>
+                        the automatic options.  
+                    </p>
                         
-                        <img src="images/Install3.png" alt="install options">
+                        <img src="images/installation/Install3.png" alt="install options">
 
-                        <p>Next you can choose your a folder name in the Start Menu.  This is really
-                            just where you would go to look for GIT.  If you are like me simple is 
-                            better and you will just leave the file name GIT.  </p>
+                    <p>
+                        Next you can choose your a folder name in the Start Menu.  This is really
+                        just where you would go to look for GIT.  If you are like me simple is 
+                        better and you will just leave the file name GIT.  
+                    </p>
 
-                        <img src="images/Install4.png" alt="Start Folder">
+                        <img src="images/installation/Install4.png" alt="Start Folder">
 
-                        <p>
+                    <p>
                         Now we choose wether we want to use the GIT Bash (terminal) only or 
                         Windows Command Prompt (the windows terminal).  There is a third option that you 
                         will want to ignore because it is the most risky option.  The Git Bash is a GIT 
@@ -119,25 +136,27 @@
                         to enter commands.  This option is the safest.  I would stick with the default 
                         Windows terminal because this lets you use either the GIT Bash or the Windows
                         Terminal and is nearly as safe.  
-                        </p>
+                    </p>
                         
-                        <img src="images/Install5.png" alt="Terminal Options">
+                        <img src="images/installation/Install5.png" alt="Terminal Options">
 
-                        <p>
+                    <p>
                         Now just leave the rest of the options on the 
                         default settings and click next until it begins installation.  If any 
                         of these choices matter I don't know about it and you can teach me!
-                        </p>
+                    </p>
 
-                        <img src="images/Install12.png" alt="Installing Now">
+                        <img src="images/installation/Install12.png" alt="Installing Now">
 
-                        <p>
+                    <p>
                         Once the installation finishes
-                        you can select the checkbox that says to open the GIT Bash.  </p>
+                        you can select the checkbox that says to open the GIT Bash.  
+                    </p>
                         
-                        <img src="images/‌InstallSuccess.png" alt="Installation Succesful">
+                        <img src="images/installation/‌InstallSuccess.png" alt="Installation Succesful">
 
-                        <p>If you are using 
+                    <p>
+                        If you are using 
                         Visual Studio Code you can actually just open the Code editor and type Control - Plus - 
                         Back-tick.  (The back-tick is the key to the left of the 1 key.)  This opens the
                         integrated Visual Studio terminal.  
@@ -149,255 +168,432 @@
         
         <section id="navigating_the_terminal" class="main-section">
             <header>Navigating The Terminal</header>
-            <article>
-                <p>
-                    Say Hello To Your Terminal!
-                </p>
-                     
-                    <img alt="A blank terminal" src="WelcomeToTerminal.png">
-
-                 
-                <p>
-                    This is a terminal.  It is also called the CLI or Command Line Interface.  A terminal looks 
-                    like an ancient computer.  But in spite of the fact that it is a total blast from the past
-                    it is going to rock your developing mind. 
-    
-                    If you look at the screen you will see <code>'C:\Users\Gabe'</code>.  This actually mirrors the folder
-                    structure of your computer.  We are in the LocalDisk(C), the Users folder, and I am logged in 
-                    to my Personal Computer so we see my name username (which is my name) Gabe.  
-                     
-                </p>
-
-                <!--dir Command-->
-                <p>
-                    Ok how do we move around and do anything?  We can move around by selecting the folder we want
-                    to go to.  It is helpful to know the folder name.  But if you didn't memorize all the folders
-                    inside your computer it isn't quite so simple.  But we have a command to see where you are.  Type 
-                    <code>dir</code> into the terminal and hit enter.  
-                </p>
-                     
-                    <img alt="The dir command" src="dirCmd.png">
-
-                <p>
-                    The <code>dir</code> command is short for directory.  It shows you the contents of the directory
-                    (or folder) you are currently in.  So now you know what all your folder names are.  
-                    <!--cd Command-->
-                    So lets pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
-                    Directory' and FreeCodeCamp is the name of the folder I selected.  You can always prompt the terminal to
-                    auto-complete the folder name by hitting Tab.  If the terminal has options and it guessed wrong you can 
-                    keep hitting tab until you see the right folder name.  When you see the correct folder name 
-                    or you finish typing it hit Enter. 
-                </p>
-                     
-                    <img alt="cd command" src="changeDirCmd.png">
-                 
-                <p>
-                    Now you see the list of folder names includes Free Code Camp.  This list of folder names just
-                    tells you where in your folders you are.  The last folder listed is the one you are currently in. 
-                    You navigated in the terminal!  To go back one level type <code>cd ..</code>.  This time instead of 
-                    using the change directory command to go into a folder you are using it to back out of your folder you
-                    are in to get to the parent folder.  
-                </p>
-                     
-                    <img alt="cd up command" src="changeDirUpCmd.png">
             
-                 
-                <p>
-                    Now you are back in the Gabe folder where we started.  This is how you navigate around the 
-                    terminal.  When you want to use GIT on a group of files you want to navigagte to the folder
-                    in question.  See you in the next section.  
-                </p>
-            </article>
+                <article>
+                    <p>
+                        Say Hello To Your Terminal!
+                    </p>
+                     
+                        <img alt="A blank terminal" src="images/navigating_the_terminal/WelcomeToTerminal.png">
+
+                    <p>
+                        This is a terminal.  It is also called the CLI or Command Line Interface.  A terminal looks 
+                        like an ancient computer.  But in spite of the fact that it is a total blast from the past
+                        it is going to rock your developing mind. 
+                    
+                        If you look at the screen you will see <code>'C:\Users\Gabe'</code>.  This actually mirrors the folder
+                        structure of your computer.  We are in the LocalDisk(C), the Users folder, and I am logged in 
+                        to my Personal Computer so we see my name username (which is my name) Gabe.  
+                    </p>
+
+                    <!--dir Command-->
+                    <p>
+                        Ok how do we move around and do anything?  We can move around by selecting the folder we want
+                        to go to.  It is helpful to know the folder name.  But if you didn't memorize all the folders
+                        inside your computer it isn't quite so simple.  But we have a command to see where you are.  Type 
+                        <code>dir</code> into the terminal and hit enter.  
+                    </p>
+
+                        <img alt="The dir command" src="images/navigating_the_terminal/dirCmd.png">
+
+                    <p>
+                        The <code>dir</code> command is short for directory.  It shows you the contents of the directory
+                        (or folder) you are currently in.  So now you know what all your folder names are.  
+                    <!--cd Command-->
+                        So lets pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
+                        Directory' and FreeCodeCamp is the name of the folder I selected.  You can always prompt the terminal to
+                        auto-complete the folder name by hitting Tab.  If the terminal has options and it guessed wrong you can 
+                        keep hitting tab until you see the right folder name.  When you see the correct folder name 
+                        or you finish typing it hit Enter. 
+                    </p>
+
+                        <img alt="cd command" src="images/navigating_the_terminal/changeDirCmd.png">
+
+                    <p>
+                        Now you see the list of folder names includes Free Code Camp.  This list of folder names just
+                        tells you where in your folders you are.  The last folder listed is the one you are currently in. 
+                        You navigated in the terminal!  To go back one level type <code>cd ..</code>.  This time instead of 
+                        using the change directory command to go into a folder you are using it to back out of your folder you
+                        are in to get to the parent folder.  
+                    </p>
+
+                        <img alt="cd up command" src="images/navigating_the_terminal/changeDirUpCmd.png">
+                
+                    <p>
+                        Now you are back in the Gabe folder where we started.  This is how you navigate around the 
+                        terminal.  When you want to use GIT on a group of files you want to navigagte to the folder
+                        in question.  See you in the next section.  
+                    </p>
+            
+                </article>
         </section>
 
 
         <section id="creating_and_initiating" class="main-section">
-            <header>
-                Creating and initiating
-            </header>
-            
-            <p>
-                So now we know how to navigate around our files and we have GIT installed.  So first we are going
-                create a directory.  So pick a location for this new file.  
-            </p>
+            <header>Creating and initiating</header>
+                <article>
 
-            <!--mkdir command-->
-            <p>
-                Now use your <code>cd</code> command and navigate to the folder where you want your new folder to 
-                be located.  Now enter <code>mkdir DemoFolder</code>.  DemoFolder should be whatever you want your 
-                new folder to be named. 
-            </p> 
-             
-                <img alt="mkdir command" src="images/creating_and_initiating/mkdirCmd.png">
-            
-            <!--git init command-->
-            <p>
-                And now we see a summary below.  We see a line that tells us what our folders parent folders are.
-                And below this we see a summary of our last time we made changes to (or created in this case) our 
-                folder and the name of our new folder DemoFolder.  
-                Now we can go into the folder we created.  Now that we are in our folder we can initiate GIT.  We
-                do this with the <code>git init</code> command. 
-            </p>
-             
-                <img alt="git init command" src="images/creating_and_initiating/gitInitCmd.png">
-             
-            <p>
-                What does this mean?  On a technical level I don't know entirely.  Don't overthink it.  Basically 
-                your should think of this as similar to installing an app on your device.  You have to do it to use it.  
-                With GIT you have to install it For every device you use it on.  And you have to initiate it in every
-                folder you want to use it with.  As a rule you will pick your project's primary folder that will 
-                contain all the files and folders associated with it and initiate GIT in that folder.   
-            </p>
-            
-            <p>
-                So initiating GIT basically adds GIT to the folder your are in and this will allow you to use
-                GIT to track your files inside this folder.  <code>git init</code> also creates a Master branch 
-                for you automatically.  So what are branches?  Basically branches are what allow you to have 
-                and keep organized multiple versions of your code.  The Master branch is the default branch.  
-                Typically you want to keep your Master branch uncluttered.  If you want to try something that 
-                might not work you make a separate branch to mess with it.  Each time you make a branch you 
-                are making a duplicate of the branch you were in.  Then you write some code, decide if you 
-                are keeping it or ditching it.  You can merge it back into a branch which will adopt your changes.  
-            </p>
-            
-            <!--git status command-->
-            <p>
-                So how do we know we have a master branch?
-                Let us use the <code>git status</code> command.  
-            </p>
-            
-                <img alt="GIT status command" src="images/creating_and_initiating/gitStatusCmd.png">
-            
-            <p>
-                This is a really useful versatile command.  It will tell you what is going on with regards to GIT.
-                For example we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
-                active because we see a status update.  We are on Branch Master.  No Commits yet.  Commits are how 
-                changes are packaged up.  And below that we see there is nothing to commit.  Since we just created 
-                an empty folder that seems about right!
-            </p>
+                    <p>
+                        So now we know how to navigate around our files and we have GIT installed.  So first we are going
+                        create a directory.  So pick a location for this new file.  
+                    </p>
+    
+                    <!--mkdir command-->
+                    <p>
+                        Now use your <code>cd</code> command and navigate to the folder where you want your new folder to 
+                        be located.  Now enter <code>mkdir DemoFolder</code>.  DemoFolder should be whatever you want your 
+                        new folder to be named. 
+                    </p> 
+    
+                        <img alt="mkdir command" src="images/creating_and_initiating/mkdirCmd.png">
+    
+                    <!--git init command-->
+                    <p>
+                        And now we see a summary below.  We see a line that tells us what our folders parent folders are.
+                        And below this we see a summary of our last time we made changes to (or created in this case) our 
+                        folder and the name of our new folder DemoFolder.  
+                        Now we can go into the folder we created.  Now that we are in our folder we can initiate GIT.  We
+                        do this with the <code>git init</code> command. 
+                    </p>
+    
+                        <img alt="git init command" src="images/creating_and_initiating/gitInitCmd.png">
+    
+                    <p>
+                        What does this mean?  On a technical level I don't know entirely.  Don't overthink it.  Basically 
+                        your should think of this as similar to installing an app on your device.  You have to do it to use it.  
+                        With GIT you have to install it For every device you use it on.  And you have to initiate it in every
+                        folder you want to use it with.  As a rule you will pick your project's primary folder that will 
+                        contain all the files and folders associated with it and initiate GIT in that folder.   
+                    </p>
+    
+                    <p>
+                        So initiating GIT basically adds GIT to the folder your are in and this will allow you to use
+                        GIT to track your files inside this folder.  <code>git init</code> also creates a Master branch 
+                        for you automatically.  So what are branches?  Basically branches are what allow you to have 
+                        and keep organized multiple versions of your code.  The Master branch is the default branch.  
+                        Typically you want to keep your Master branch uncluttered.  If you want to try something that 
+                        might not work you make a separate branch to mess with it.  Each time you make a branch you 
+                        are making a duplicate of the branch you were in.  Then you write some code, decide if you 
+                        are keeping it or ditching it.  You can merge it back into a branch which will adopt your changes.  
+                    </p>
+    
+                    <!--git status command-->
+                    <p>
+                        So how do we know we have a master branch?
+                        Let us use the <code>git status</code> command.  
+                    </p>
+    
+                        <img alt="GIT status command" src="images/creating_and_initiating/gitStatusCmd.png">
+    
+                    <p>
+                        This is a really useful versatile command.  It will tell you what is going on with regards to GIT.
+                        For example we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
+                        active because we see a status update.  We are on Branch Master.  No Commits yet.  Commits are how 
+                        changes are packaged up.  And below that we see there is nothing to commit.  Since we just created 
+                        an empty folder that seems about right!
+                    </p>
+                </article>
 
         </section>
 
 
         <section class="main-section">
             <header id="adding_and_committing">Adding and Committing</header>
-            
-            <p>
-                Now we are ready to start using GIT.  We start by creating a file and writing some code in it.
-                I am just making a really simple index.html file and giving it a title.  
-            </p>
+                <article>
 
-                <img src="images/adding_and_committing/Write_html.png" alt="Write HTML">
-
-            <p>
-                So we wrote code.  Now lets check in with GIT to see what it thinks about this.  So we will
-                use the <code>git status</code> command to check on our new file.  
-            </p>
-
-                <img src="images/adding_and_committing/staging_git_status.png" alt="Git status in staging">
-
-            <p>
-                So we see our new file appear in red.  Everything we saw before after using the <code>git init        
-                </code> command is still there along with text telling us that there are untracked files.  
-                Then it lists the files or file that is untracked.  Below this we see it tells us how to change 
-                this.  This tells us that GIT is aware of the file.  But we haven't asked GIT to track the file
-                for us yet so it isn't.  So let's do that.  You can either use the file name to do this by typing
-                <code>git add index.html</code>.  This way works if you only want to add some files to be tracked
-                but not others.  In our case we will use <code>git add *</code> to add everything to be tracked.  
-                The asterisk is commonly used to denote everything, or all possible in computer science.  
-             </p>
-
-                <img src="images/adding_and_committing/git_add.png" alt="git add all">
-
-            <p>
-                Now we should check the status to see if it really worked.
-            </p>
-
-                <img src="images/adding_and_committing/added_status.png" alt="added status">
-
-            <p>
-                Awesome!  It is green instead of red.  Now GIT is tracking the file.  There is actually a name
-                for this.  Files that are being tracked but are not yet committed are in the "Staging Area."  
-                The proper name for this is "Index;" I find this unhelpful and confusing so I am just going to
-                refer to it as the staging area.   
-                So now you have GIT tracking the file but you are not committed to the file yet.  The staging 
-                area could be thought of like a loading dock.  You have your items you are shipping in the loading
-                dock so they are safely contained.  But you don't have to ship them out.  You can pick what you want
-                from the loading dock to pack on the trucks.  In the same way with GIT you can change your mind and 
-                add, remove, or edit files from the staging area without committing to them. 
-            </p>
-            <p>
-                So lets make a commit.  When you make a commit you are strongly encouraged to include a commit 
-                message.  This is considered a good practice because GIT is often used by teams of developers who 
-                are all working on the same code base so more communication is usually helpful.  There is a way to
-                do this without but why not set good habits and practice writing a short meaninful message about 
-                what your commit will contain.  So we will write <code>git commit -m 'First commit'</code> and 
-                hit Enter.  
-            </p>
-
-                <img src="images/adding_and_committing/commit.png" alt="commit image">
-            
-            <p>
-                And you have executed your first commit!  You will see below <code>[Master (root-commit) 
-                    a084555] First commit</code>.  
-                This is telling you that you have made a commit to the Master Branch.  Then there is a id number
-                for this commit along with the message we wrote.  We also see a summary
-                of what was in the commit.  It says that there were 13 insertions because before there was 
-                no index.html file and now our master branch has this file.  The index.html file is thirteen
-                lines long so GIT counts each line as an insertion.  Now the we have made a commit to the Master
-                branch.  In this process we simply made changes by adding a file.  Then we committed that to 
-                the master branch.  In the next section we will learn about making branches and how that can 
-                allow us to make changes and then get rid of them or keep them without having to remember what
-                all our changes were.  
-                </p>
+                    <p>
+                        Now we are ready to start using GIT.  We start by creating a file and writing some code in it.
+                        I am just making a really simple index.html file and giving it a title.  
+                    </p>
+    
+                        <img src="images/adding_and_committing/Write_html.png" alt="Write HTML">
+    
+                    <p>
+                        So we wrote code.  Now lets check in with GIT to see what it thinks about this.  So we will
+                        use the <code>git status</code> command to check on our new file.  
+                    </p>
+    
+                        <img src="images/adding_and_committing/staging_git_status.png" alt="Git status in staging">
+    
+                    <p>
+                        So we see our new file appear in red.  Everything we saw before after using the <code>git init        
+                        </code> command is still there along with text telling us that there are untracked files.  
+                        Then it lists the files or file that is untracked.  Below this we see it tells us how to change 
+                        this.  This tells us that GIT is aware of the file.  But we haven't asked GIT to track the file
+                        for us yet so it isn't.  So let's do that.  You can either use the file name to do this by typing
+                        <code>git add index.html</code>.  This way works if you only want to add some files to be tracked
+                        but not others.  In our case we will use <code>git add *</code> to add everything to be tracked.  
+                        The asterisk is commonly used to denote everything, or all possible in computer science.  
+                    </p>
+    
+                        <img src="images/adding_and_committing/git_add.png" alt="git add all">
+    
+                    <p>
+                        Now we should check the status to see if it really worked.
+                    </p>
+    
+                        <img src="images/adding_and_committing/added_status.png" alt="added status">
+    
+                    <p>
+                        Awesome!  It is green instead of red.  Now GIT is tracking the file.  There is actually a name
+                        for this.  Files that are being tracked but are not yet committed are in the "Staging Area."  
+                        The proper name for this is "Index;" I find this unhelpful and confusing so I am just going to
+                        refer to it as the staging area.   
+                        So now you have GIT tracking the file but you are not committed to the file yet.  The staging 
+                        area could be thought of like a loading dock.  You have your items you are shipping in the loading
+                        dock so they are safely contained.  But you don't have to ship them out.  You can pick what you want
+                        from the loading dock to pack on the trucks.  In the same way with GIT you can change your mind and 
+                        add, remove, or edit files from the staging area without committing to them. 
+                    </p>
+                
+                    <p>
+                        So lets make a commit.  When you make a commit you are strongly encouraged to include a commit 
+                        message.  This is considered a good practice because GIT is often used by teams of developers who 
+                        are all working on the same code base so more communication is usually helpful.  There is a way to
+                        do this without but why not set good habits and practice writing a short meaninful message about 
+                        what your commit will contain.  So we will write <code>git commit -m 'First commit'</code> and 
+                        hit Enter.  
+                    </p>
+    
+                        <img src="images/adding_and_committing/commit.png" alt="commit image">
+    
+                    <p>
+                        And you have executed your first commit!  You will see below <code>[Master (root-commit) 
+                        a084555] First commit</code>.  
+                        This is telling you that you have made a commit to the Master Branch.  Then there is a id number
+                        for this commit along with the message we wrote.  We also see a summary
+                        of what was in the commit.  It says that there were 13 insertions because before there was 
+                        no index.html file and now our master branch has this file.  The index.html file is thirteen
+                        lines long so GIT counts each line as an insertion.  Now the we have made a commit to the Master
+                        branch.  In this process we simply made changes by adding a file.  Then we committed that to 
+                        the master branch.  In the next section we will learn about making branches and how that can 
+                        allow us to make changes and then get rid of them or keep them without having to remember what
+                        all our changes were.  
+                    </p>
+                </article>
 
         </section>
-                        <!--
+        
+
         <section class="main-section">
+
             <header id="branching">Branching</header>
-            <p></p>
+                <article>
+
+                    <p>
+                        Branches are something that allows you to create a dublicate of your current repository.  The 
+                        can be deleted, saved, or merged with the master.  Creating a branch is quick and easy.  To do
+                        this you use the <code>git checkout -b yourBranchNameHere</code>.  <code>Checkout</code> means you are 
+                        switching to this branch.  <code>-b</code> is for branch.  <code>yourBranchNameHere</code> is going
+                        to be whatever you want this branch to be named.  
+                    </p>
+    
+                        <img src="images/branching/git_branch.png" alt="git branch">
+    
+                    <p>
+                        And just like that you see <code>Switched to a new branch 'yourBranchNameHere'</code> telling you
+                        that you switched to a new branch.  Now you can go crazy and do whatever you want.  Or if you 
+                        want to go back to master branch you can say <code>git checkout master</code>.  <code>git checkout</code>
+                        will take you back and forth.  If your get confused <code>git branch</code> will tell you which branch you
+                        are in and list all other branches.  You can think of it as checking out a branch to your code editor where 
+                        you can work on it and modify it.  If you make changes to your current branch and try to switch branches 
+                        without adding your changes to the staging area GIT will stop you.  You can add and commit changes to 
+                        your branch and they will be tracked and saved by GIT.  The beauty of branches is that they are simple
+                        and quick to create and you can keep what you have created or delete them.    
+                    </p>
+                    
+                    <p>
+                        Don't forget to do something with our branch!  Since our repository is just an HTML 
+                        index file with a title let's change the title.  We will go with a corny GIT pun.
+                        <code>GIT IT!</code> will be our new title.  Now use your GIT skills we are learning
+                        and save the file, add the file to the staging area, and make a commit for the branch. 
+                    </p>
+
+                    <p>
+                        This is everything that we are going to cover here regarding using GIT locally.  You can do just 
+                        this and be perfectly happy.  If keeping your code private is a concern you may prefer to only 
+                        use GIT locally.  GIT is an open-source free Source Control software.  Github is a company that is 
+                        built on top of GIT which you can use to share your code with others, collabaratively code with others,
+                        and more.  Github is a wonderful site if you want people to see your code.  You can use
+                        Github with privately but it costs money.  The rest of this guide will cover configuring your 
+                        GIT setup, creating a repository, adding a remote connection, pushing our master to the remote
+                        repository, pushing a branch, creating a pull request, merging the pull request, and updating
+                        the local master.  All of these are aspects of storing your code on Github and how to communicate
+                        with the Github repository.   
+                    </p>
+                </article>
         </section>
 
-    -->
+
         <section id="Configuring" class="main-section">
+        
             <header>Configuring</header>
-            <p>So in this section we are going to use the <code>git config</code> command to set up GIT. 
-            <code>config</code> is obviously an abbreviation for configure.  So we are telling GIT that we
-            want to configure our global settings.  So we are going to first enter this command <code>git 
-            config --global user.name "User name"</code> with your name in the quotation marks.  Then
-            hit Enter.  As long as you don't see an error command this worked.  Now we enter <code>git 
-            config --global user.email user@example.com</code> with your email address. </p>
+                <article>
 
-            <img src="images/Config1.png" alt="Configuring GIT">
+                    <p>
+                        So in this section we are going to use the <code>git config</code> command to set up GIT. 
+                        <code>config</code> is obviously an abbreviation for configure.  So we are telling GIT that we
+                        want to configure our global settings.  So we are going to first enter this command <code>git 
+                        config --global user.name "User name"</code> with your name in the quotation marks.  Then
+                        hit Enter.  As long as you don't see an error command this worked.  Now we enter <code>git 
+                        config --global user.email user@example.com</code> with your email address. 
+                    </p>
+    
+                        <img src="images/configuring/Config1.png" alt="Configuring GIT">
+    
+                    <p>
+                        For the moment that is plenty.  Onward!
+                    </p>
 
-            <p>For the moment that is plenty.  Onward!</p>
+                </article>    
         </section>
 
-<!--
 
         <section class="main-section">
             <header id="creating_a_github_repository">Creating a Github Repository</header>
-            <p></p>
+                <article>
+                    <p>
+                        So to create a repository on Github first you need to log in to your
+                        Github account.  Find the plus symbol and click on it.  Select the 
+                        create new repository option.  Choose a title for the repository.  
+                        If you want to you can add a description of the project.  There are
+                        few more options like choosing a liscence for your project.  This isn't 
+                        going to matter much today with our example repository so don't worry 
+                        about this.  There is an option to select a .gitignore.  Leave this as none.
+                        There is also an option to initialize your repository with a
+                        ReadMe.  Normally these are great, but for the moment don't do this.  
+                        It is really easy to add one later but right now it will make it more 
+                        complicated.  So for today just give your repository a title and 
+                        click create the repository.   
+                    </p>
+
+                        <img src="images/creating_new_repository/new_repository.png" alt="new repository">
+
+                    <p>
+                        Now pause on this screen.  This screen gives us instructions for different
+                        scenarios.  We want the second option "Push an existing repository from the 
+                        command line."  You can actually just click the clipboard icon to the right
+                        and then paste (Ctrl-V) the code into the command line.  I reccomend typing 
+                        the commands manually instead to get used to them.  Having to manually type
+                        commands helps you to notice the parts of the command without forcing yourself
+                        to.  It can also be better if you tend to learn by doing.  
+                    </p>
+
+                    <p>
+                        For our example you have me to guide you and we won't be doing it exactly
+                        the same because we are going a little out of order.  But just know that if you
+                        want Github to tell you what to do you need to not initialize your repository with a
+                        ReadMe.  
+                    </p>
+
+                </article>
         </section>
+
+
         <section class="main-section">
-            <header id="adding_a_remote">Adding a Remote</header>
-            <p></p>
+            <header id="adding_a_remote">Adding a Remote</header>  
+                <article>
+                    <p>
+                        Now for remotes.  To explain this (as well as I understand it at least) I want to 
+                        review where we are.  Only from GIT's perspective.  So we have a local GIT repository
+                        with a Master Branch and another branch.  We have a commit we created but we haven't
+                        committed it to a branch yet.  And we have a currently unconnected Github repository 
+                        that is empty.  So the first thing we need to do is establish our master branch in 
+                        the new empty Github repository.  The Github repository is what we call a remote.  
+                        It is a remote machine (a Github server located who knows where) that houses our
+                        repository.  So first of all we actually need to go back to the terminal and switch 
+                        from our new branch to the 
+                        master branch.  If we forgot this we would end up with the Master and our other branch
+                        switched with each other on Github which would just be confusing and cause issues.
+                    </p>
+
+                    <p>
+                        Ok now we are ready to add the remote.  So So the command is <code>git remote add origin
+                        https://github.com/yourUserName/yourRepositoryName.Git</code>.  So we telling GIT that 
+                        the command is about a Remote and we want it to add an origin.  So first, the name origin
+                        is referring to the URL for your repository.  The end of the command is your repositories 
+                        URL with <code>.Git</code> added onto the end.  So the Remote Origin we are adding is 
+                        a destination URL where we push our code to add it to the Github repository.  But why 
+                        is it called an origin instead of a destination?  Because often when people use Github 
+                        they are working collabaratively and they are cloning (or copying) the code from the 
+                        Github repository (the origin) to their local machine to work on it.  
+                    </p>
+                    
+                        <img src="images/adding_a_remote/Add_remote1.png" alt="adding a remote image 1">
+
+                    <p>
+                        So that is how you specify the Remote Origin for a GIT repository.  Once you do this 
+                        GIT will remember the Remote Origin for this repository.  You will only need to worry 
+                        about the Remote Origin once per repository.  If you do something when you are setting 
+                        up your Github repository and you don't have the little Cheat Page telling you these 
+                        commands You can use the exact command above only with the URL for your new repository 
+                        with <code>.Git</code> added onto the end.  
+                    </p>
+
+                    <p>
+                        Now we want to push master branch.  <code>git push -u origin master</code> is the command 
+                        to do this.  <code>git push</code> tells GIT you are pushing (or sending) something.  <code>-u
+                        </code> tells GIT that the next thing is a URL.  Origin is the keyword that you use to
+                        refer to the Remote Origin.  And lastly <code>master</code> is the code branch we are 
+                        pushing.  
+                    </p>
+
+                        <img src="images/adding_a_remote/Add_remote4.png" alt="pushing master">
+
+                    <p>
+                        Github will require you to login in to Github if this is your first time interacting 
+                        with Github from the command line on this machine.  
+                    </p>
+
+                        <img src="images/adding_a_remote/Add_remote3.png" alt="logging into Github">
+                
+                    <p>
+                        Now, assuming everything went correctly, you will see a lot of things happening 
+                        in the terminal.  When GIT finishes you will see <code>* [new branch] master --> master
+                        </code> and <code>Branch 'master' set up to track remote branch 'master' from 
+                        'origin'</code>.  This is basically saying that your original local 'master' branch 
+                        is tracking the remote 'master' branch you just created.  Only one thing to do now,
+                        go to your Github account and check out your no longer empty Github repository.    
+                    </p>
+
+            </article>
         </section>
         <section class="main-section">
             <header id="push_your_branch">Push your branch</header>
-            <p></p>
+            <article>
+                <p>
+                    
+                </p>
+                
+            </article>
         </section>
+                        <!--
         <section class="main-section">
             <header id="pull_request">Pull Request</header>
-            <p></p>
+                <article>
+                    <p>
+                    
+                    </p>
+
+                </article>
         </section>
         <section class="main-section">
             <header id="pulling_master">Pulling Master</header>
-            <p></p>
+                <article>
+                    <p>
+                    
+                    </p>
+
+                </article>
         </section>
         <section class="main-section">
             <header id="final_steps">Final steps</header>
-            <p></p>
+                <article>
+                    <p>
+                    
+                    </p>
+
+                </article>
         </section>
         -->
     </main>
