@@ -60,3 +60,9 @@
                         [x] Complete + prettify code for Installation
                         [x] Complete + prettify code for Introduction and assumptions
                         [x] Complete + prettify code for Configuring
+[] Publish this Guide on Medium
+        [] Publish on Medium FCC
+        [] Share on Twitter
+        [] Share on LinkedIn 
+        [] Share on Free Code Camp Forum as part of asking for feedback
+        [] Link to this on your LinkedIn Account by sharing this as a publication.  
