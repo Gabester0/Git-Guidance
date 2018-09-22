@@ -271,10 +271,19 @@
                         GIT to track your files inside this folder.  <code>git init</code> also creates a Master branch 
                         for you automatically.  So what are branches?  Basically branches are what allow you to have 
                         and keep organized multiple versions of your code.  The Master branch is the default branch.  
-                        Typically you want to keep your Master branch uncluttered.  If you want to try something that 
+                        Typically you want to keep your Master branch clean.  If you want to try something that 
                         might not work you make a separate branch to mess with it.  Each time you make a branch you 
                         are making a duplicate of the branch you were in.  Then you write some code, decide if you 
                         are keeping it or ditching it.  You can merge it back into a branch which will adopt your changes.  
+                        A helpful way to think of this is the Master branch is for stable code that you know works.  
+                        Anything experimental or unstable (a work in progress) is better worked on in a branch.  This allows
+                        you to minimize the time lost due to failed experiments that changed parts of your code that worked.  
+                        And combining (or merging) your succesful experiments is easy.  
+                    </p>
+
+                    <p>
+                        We will only be covering merging branches on Github.  You can merge branches on your local machine.  
+                        We will cover this more later but I don't 
                     </p>
     
                     <!--git status command-->
@@ -366,10 +375,18 @@
                         no index.html file and now our master branch has this file.  The index.html file is thirteen
                         lines long so GIT counts each line as an insertion.  Now the we have made a commit to the Master
                         branch.  In this process we simply made changes by adding a file.  Then we committed that to 
-                        the master branch.  In the next section we will learn about making branches and how that can 
+                        the master branch.  This means that we basically merged our changes into the Master branch.  
+                        This is a perfectly good way of changing the file.  It is better to only use this method 
+                        if you are doing things you know you know how to do.  If you are making changes you are not 
+                        sure you will want to keep you will want to do this on a separate branch.  
+                    </p>
+                    
+                    <p>    
+                        In the next section we will learn about making branches and how that can 
                         allow us to make changes and then get rid of them or keep them without having to remember what
                         all our changes were.  
                     </p>
+
                 </article>
 
         </section>
@@ -385,13 +402,16 @@
                         can be deleted, saved, or merged with the master.  Creating a branch is quick and easy.  To do
                         this you use the <code>git checkout -b yourBranchNameHere</code>.  <code>Checkout</code> means you are 
                         switching to this branch.  <code>-b</code> is for branch.  <code>yourBranchNameHere</code> is going
-                        to be whatever you want this branch to be named.  
+                        to be whatever you want this branch to be named.  For our examples we will call it day3 because that 
+                        is the name from some of my example screenshots!  Feel free to name these whatever you want.  When 
+                        in doubt it is probably wise to be pretty formulaic in your name choices.  Try to give branches 
+                        names that will help you stay organized.  
                     </p>
     
                         <img src="images/branching/git_branch.png" alt="git branch">
     
                     <p>
-                        And just like that you see <code>Switched to a new branch 'yourBranchNameHere'</code> telling you
+                        And just like that you see <code>Switched to a new branch 'day3'</code> telling you
                         that you switched to a new branch.  Now you can go crazy and do whatever you want.  Or if you 
                         want to go back to master branch you can say <code>git checkout master</code>.  <code>git checkout</code>
                         will take you back and forth.  If your get confused <code>git branch</code> will tell you which branch you
@@ -403,10 +423,10 @@
                     </p>
                     
                     <p>
-                        Don't forget to do something with our branch!  Since our repository is just an HTML 
+                        Don't forget to do something with our day3 branch!  Since our repository is just an HTML 
                         index file with a title let's change the title.  We will go with a corny GIT pun.
                         <code>GIT IT!</code> will be our new title.  Now use your GIT skills we are learning
-                        and save the file, add the file to the staging area, and make a commit for the branch. 
+                        and save the file, add the file to the staging area, and make a commit for the day3 branch. 
                     </p>
 
                     <p>
@@ -496,14 +516,15 @@
                     <p>
                         Now for remotes.  To explain this (as well as I understand it at least) I want to 
                         review where we are.  Only from GIT's perspective.  So we have a local GIT repository
-                        with a Master Branch and another branch.  We have a commit we created but we haven't
-                        committed it to a branch yet.  And we have a currently unconnected Github repository 
+                        with a Master Branch and our day3 branch which has a different title.  We have a commit 
+                        we created in our day3 branch with the different title but we haven't
+                        committed it to Master yet.  And we have a currently unconnected Github repository 
                         that is empty.  So the first thing we need to do is establish our master branch in 
                         the new empty Github repository.  The Github repository is what we call a remote.  
                         It is a remote machine (a Github server located who knows where) that houses our
                         repository.  So first of all we actually need to go back to the terminal and switch 
-                        from our new branch to the 
-                        master branch.  If we forgot this we would end up with the Master and our other branch
+                        from our day3 branch to the 
+                        master branch.  If we forgot this we would end up with the Master and our day3 branch
                         switched with each other on Github which would just be confusing and cause issues.
                     </p>
 
@@ -562,8 +583,26 @@
             <header id="push_your_branch">Push your branch</header>
             <article>
                 <p>
-                    
+                    Since we just pushed the local master branch we are now ready to work with the local day3 branch.  
+                    Right now we should have the index.html file available to see or change in the Github repository.
+                    This was our master branch with the first title that we pushed to Github.  But we created the 
+                    day3 branch and gave it a silly title.  So let us go back to the terminal.  We need to switch 
+                    back to the day3 branch.  
                 </p>
+
+                <p>
+                    So now that you are back in the day3 branch you can push your commit.  The command is basically the
+                    same as in the previous section.  The only differences is that you already added a remote and Github
+                    authorized a personal access token for the computer you are on.  If you look in your email you will
+                    probably see an automatically generated email from Github saying that a personal access token for 
+                    your Github account was issued.  This is a security notice just like if you log into email on a 
+                    different device and you get an email asking if that was you.  
+                </p>
+
+                <p>
+                    So now you can 
+                </p>
+
                 
             </article>
         </section>
