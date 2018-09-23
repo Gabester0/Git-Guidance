@@ -43,14 +43,17 @@
             between local master and remote master)
         [x] Gabe Story #13: Git Branches and how to make a branch and how to navigate between Branches
         [x] Gabe Story #14: Why we use a branch (Safe way to change your code without ruining your work so far)
-[] Gabe Story #15: Making a commit from a branch (Add to staging; create commit; push to remote master)
-[] Gabe Story #16: Creating a pull request and merging it to master (if green) and deleting 
+        [x] Gabe Story #15: Making a commit from a branch (Add to staging; create commit; push to remote master)
+        [x] Gabe Story #16: Creating a pull request and merging it to master (if green) and deleting 
             branch (remember, you are just deleting the branch from Github, it is still local)
-[] Gabe Story #17: Catching your local Master up to remote master (don't forget to move back 
+        [x] Gabe Story #17: Catching your local Master up to remote master (don't forget to move back 
             to master branch first)
-[] Gabe Story #18: Deleting your first branch (now it is really gone.)
+        [x] Gabe Story #18: Deleting your first branch (now it is really gone.)
 [] Gabe Story #19: Apply the FCC Accessibility steps to this project
                         [x] All img tags have an alt description.
+                        [x] Semantic meaning to HTML tags
+                [] 
+                [] 
         [x] Gabe Story #20: Store all images in organized folders
                         [x] All images are stored in images folder
                         [x] All links are updated to reflect folder structure

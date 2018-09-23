@@ -8,12 +8,12 @@
     <link type="text/css" rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body id="top">
     
-    <header id="top">
+    <header>
         <h1>Gabe's GIT Guide</h1>
-        <q>Get ready to look back at your past self and wonder what that 
-            silly person was thinking not learning GIT Sooner.  
+        <q>
+            Let's GIT it on! 
         </q>
     </header>
     
@@ -33,10 +33,9 @@
             <span><a class="nav-link" href="#creating_a_github_repository">Creating a Github Repository</a></span>
             <span><a class="nav-link" href="#adding_a_remote">Adding a Remote</a></span>
             <span><a class="nav-link" href="#pushing_your_branch">Pushing your branch</a></span>
-                <!--
             <span><a class="nav-link" href="#pull_request">Pull Request</a></span>
             <span><a class="nav-link" href="#pulling_master">Pulling Master</a></span>
-            <span><a class="nav-link" href="#final_steps">Final Steps</a></span>-->
+            <span><a class="nav-link" href="#final_steps">Final Steps</a></span>
         </nav>
     
         <section id="introduction_and_assumptions" class="main-section">
@@ -167,6 +166,7 @@
 
         
         <section id="navigating_the_terminal" class="main-section">
+
             <header>Navigating The Terminal</header>
             
                 <article>
@@ -229,8 +229,10 @@
         </section>
 
 
-        <section id="creating_and_initiating" class="main-section">
+        <section class="main-section" id="creating_and_initiating">
+
             <header>Creating and initiating</header>
+
                 <article>
 
                     <p>
@@ -298,16 +300,20 @@
                         This is a really useful versatile command.  It will tell you what is going on with regards to GIT.
                         For example we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
                         active because we see a status update.  We are on Branch Master.  No Commits yet.  Commits are how 
-                        changes are packaged up.  And below that we see there is nothing to commit.  Since we just created 
-                        an empty folder that seems about right!
+                        changes are packaged up.  If you add all your changes into the commit you are basically bundling
+                        your entire branch into the commit.  If you select individual files to add then you are not
+                        bundling the entire branch.  And below that we see there is nothing to commit.  Since we just 
+                        created an empty folder that seems about right!
                     </p>
                 </article>
 
         </section>
 
 
-        <section class="main-section">
-            <header id="adding_and_committing">Adding and Committing</header>
+        <section class="main-section" id="adding_and_committing">
+
+            <header>Adding and Committing</header>
+
                 <article>
 
                     <p>
@@ -392,9 +398,10 @@
         </section>
         
 
-        <section class="main-section">
+        <section class="main-section" id="branching">
 
-            <header id="branching">Branching</header>
+            <header>Branching</header>
+
                 <article>
 
                     <p>
@@ -445,9 +452,10 @@
         </section>
 
 
-        <section id="Configuring" class="main-section">
+        <section class="main-section" id="Configuring">
         
             <header>Configuring</header>
+
                 <article>
 
                     <p>
@@ -469,13 +477,21 @@
         </section>
 
 
-        <section class="main-section">
-            <header id="creating_a_github_repository">Creating a Github Repository</header>
+        <section class="main-section" id="creating_a_github_repository">
+
+            <header>Creating a Github Repository</header>
+            
                 <article>
                     <p>
                         So to create a repository on Github first you need to log in to your
                         Github account.  Find the plus symbol and click on it.  Select the 
-                        create new repository option.  Choose a title for the repository.  
+                        create new repository option.  
+                    </p>
+                                         
+                        <img src="images/creating_new_repository/create_github_repository.png" alt="new repository">
+
+                    <p>
+                        Choose a title for the repository.  
                         If you want to you can add a description of the project.  There are
                         few more options like choosing a liscence for your project.  This isn't 
                         going to matter much today with our example repository so don't worry 
@@ -487,7 +503,7 @@
                         click create the repository.   
                     </p>
 
-                        <img src="images/creating_new_repository/new_repository.png" alt="new repository">
+                        <img src="images/creating_new_repository/new_repository_instructions.png" alt="New repository instructions">
 
                     <p>
                         Now pause on this screen.  This screen gives us instructions for different
@@ -510,9 +526,12 @@
         </section>
 
 
-        <section class="main-section">
-            <header id="adding_a_remote">Adding a Remote</header>  
+        <section class="main-section" id="adding_a_remote">
+
+            <header>Adding a Remote</header>
+
                 <article>
+
                     <p>
                         Now for remotes.  To explain this (as well as I understand it at least) I want to 
                         review where we are.  Only from GIT's perspective.  So we have a local GIT repository
@@ -579,64 +598,157 @@
 
             </article>
         </section>
-        <section class="main-section">
-            <header id="push_your_branch">Push your branch</header>
+
+
+        <section class="main-section" id="pushing_your_branch">
+
+            <header>Pushing your branch</header>
+            
+                <article>
+                    <p>
+                        Since we just pushed the local master branch we are now ready to work with the local day3 branch.  
+                        Right now we should have the index.html file available to see or change in the Github repository.
+                        This was our master branch with the first title that we pushed to Github.  But we created the 
+                        day3 branch and gave it a silly title.  So let us go back to the terminal.  
+                    </p>
+
+                    <p>
+                        You are now ready to push the commit with the day3 branch.  Because you created the commit in the
+                        day3 branch you refer to the commit with the branch name.  The command is basically the
+                        same as in the previous section.  The only differences is that you already added a remote and Github
+                        authorized a personal access token for the computer you are on.  If you look in your email you will
+                        probably see an automatically generated email from Github saying that a personal access token for 
+                        your Github account was issued.  This is a security notice just like if you log into email on a 
+                        different device and you get an email asking if that was you.  
+                    </p>
+
+                    <p>
+                        So now you can enter <code>git push -u origin day3</code>.  
+                    </p>
+
+                        <img src="images/pushing_your_branch/pushing_branch.png" alt="pushing branch">
+
+                    <p>
+                        Now just like when we pushed the 
+                        master branch you will see a notice telling you that there is a new branch named day3 in the 
+                        remote repository.  Lets go create a pull request!
+                    </p>
+
+                        <img src="images/pushing_your_branch/pushing_branch_result.png" alt="New branch on Github">
+
+                </article>
+        </section>
+
+
+
+        <section class="main-section" id="pull_request">
+
+            <header>Pull Request</header>
+
+                <article>
+
+                    <p>
+                        Creating a pull request is a process with the main purpose of alerting the Repository
+                        owner that you made changes or additions to their code and asking them to approve the
+                        changes and merge them into their repository.  They can then approve and merge the 
+                        pull request, suggest improvements to you should make, or reject the pull request.  
+                        For us it is a little pointless since we are the repository owner and the ones making
+                        the pull request to ourselves!  But it is good practice for collabarating with people.  
+                        Also it creates documentation of your coding process.  This is very useful if you want
+                        to work professionally as a developer.
+                    </p>
+                    
+                    <p>    
+                        If you go to your Github repository you will see a tan notice telling you there is a 
+                        new branch that you recently pushed.  There is a green Pull Request button.  Click it.
+                    </p>
+
+                        <img src="images/pull_request/pull_request_1.png" alt="open a pull request">
+
+                    <p>
+                        This will give you the option to add comments to attach to the pull request.  Above
+                        the comment box Github tells you that you are comparing Master and Day3 branches.  
+                        Next to this there is a green checkmark and 'Able To Merge.'  This is good.  It means
+                        that there are no conflicts between to the 2 branches and GIT can merge them.  Go 
+                        ahead and click 'Create Pull Request.'
+                    </p>
+
+                        <img src="images/pull_request/pull_request_2.png" alt="merge pull request">
+
+                    <p>
+                        Because you are the repository owner you will immediately see an option to merge
+                        the pull request along with a notice that the branch can merge without conflict.  
+                        If you want to see a side by side comparison of the Master branch and the day3 
+                        branch there is a 'Files changed' tab you can click to compare them.  Go ahead 
+                        and click 'Merge Pull Request.'
+                    </p>
+
+                        <img src="images/pull_request/pull-request-merged.png" alt="merged pull request">
+
+                    <p>
+                        Now you will see a purple Merged icon and Github will tell you the pull request 
+                        was succesfully merged.  There is a 'Delete Branch' button.  We don't need the day3 
+                        branch anymore so go ahead and delete it.  If you need it back there is an undo
+                        button.  Now go ahead and click the blue link to the repository or find the 'Code' 
+                        tab and click it.  Open the index.html file.  Find the now changed title 
+                        and revel in your newfound ability to Git things done!
+                    </p>
+
+                        <img src="images/pull_request/new_title.png" alt="updated code">
+                    
+                </article>
+        </section>
+
+
+        <section class="main-section" id="pulling_master">
+            
+            <header>Pulling Master</header>
+            
             <article>
                 <p>
-                    Since we just pushed the local master branch we are now ready to work with the local day3 branch.  
-                    Right now we should have the index.html file available to see or change in the Github repository.
-                    This was our master branch with the first title that we pushed to Github.  But we created the 
-                    day3 branch and gave it a silly title.  So let us go back to the terminal.  We need to switch 
-                    back to the day3 branch.  
+                    Ok now we have succesfully created a pull request and merged it.  Our Github repository
+                    now has the updated title.  But our local repository is not updated.  So go back to 
+                    the terminal and switch back to the master branch.  Now enter <code>git pull origin
+                        master</code>.           
                 </p>
+
+                    <img src="images/pulling_master/pull_origin_master.png" alt="pull origin master">
+                
+                <p>
+                    This is like pushing the master or a branch to the origin (remote URL) except we are 
+                    using the pull command.  The pull command gets the remote origin's master branch and 
+                    merges it into our local code master branch.  This is very similar to the <code>git 
+                    fetch</code> command except that <code>git pull</code> automatically merges the 
+                    pulled code.  
+                </p>
+
+            </article>
+
+        </section>
+        
+        <section class="main-section" id="final_steps">
+            <header>Final steps</header>
+            <article>
+                <p>
+                    Now we just want to clean up our local GIT repository.  Since we updated or local master 
+                    branch we don't need the day3 branch anymore.  Enter <code>git branch -d day3</code>. 
+                </p>
+
+                    <img src="images/final_steps/delete_branch.png" alt="delete day3 branch">
 
                 <p>
-                    So now that you are back in the day3 branch you can push your commit.  The command is basically the
-                    same as in the previous section.  The only differences is that you already added a remote and Github
-                    authorized a personal access token for the computer you are on.  If you look in your email you will
-                    probably see an automatically generated email from Github saying that a personal access token for 
-                    your Github account was issued.  This is a security notice just like if you log into email on a 
-                    different device and you get an email asking if that was you.  
+                    Now there is just one more thing that you need to do.  Use GIT!    
                 </p>
-
-                <p>
-                    So now you can 
-                </p>
-
                 
             </article>
-        </section>
-                        <!--
-        <section class="main-section">
-            <header id="pull_request">Pull Request</header>
-                <article>
-                    <p>
-                    
-                    </p>
 
-                </article>
         </section>
-        <section class="main-section">
-            <header id="pulling_master">Pulling Master</header>
-                <article>
-                    <p>
-                    
-                    </p>
 
-                </article>
-        </section>
-        <section class="main-section">
-            <header id="final_steps">Final steps</header>
-                <article>
-                    <p>
-                    
-                    </p>
 
-                </article>
-        </section>
-        -->
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
 </body>
 </html>
