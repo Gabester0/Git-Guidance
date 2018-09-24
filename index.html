@@ -10,12 +10,12 @@
 </head>
 <body id="top">
     
-    <header>
+    <div id="topHeader">
         <h1>Gabe's GIT Guide</h1>
         <q>
             Let's GIT it on! 
         </q>
-    </header>
+    </div>
     
 
     <main id="main-doc">
@@ -40,7 +40,7 @@
     
         <section id="introduction_and_assumptions" class="main-section">
         
-            <header>Introduction and Assumptions</header>
+            <header><h4>Introduction and Assumptions</h4></header>
                 <article>
                     <p>
                         Thanks for looking at my introductory Git Guide.  I recently went from zero
@@ -52,7 +52,7 @@
                     </p>
                 </article>
                 
-            <header class="secondaryHeader">I am assuming the following things about you:</header>
+            <header class="secondaryHeader"><h5>I am assuming the following things about you:</h5></header>
                 <article>
                     <ul>
                             <li>You have a computer</li>
@@ -77,7 +77,7 @@
 
         <section id="installation" class="main-section">
             
-            <header>Installation</header>
+            <header><h4>Installation</h4></header>
                 <article>
                     <p>
                         All right lets get going!  What is GIT?  It is a free open-source 
@@ -91,7 +91,7 @@
                         for Windows</a>
                     </p>
 
-                        <img src="images/installation/Download.png" alt="install starting image">
+                        <img src="images/installation/Download.png" alt="installation beginning">
                         
                     <p>
                         Once 
@@ -100,7 +100,7 @@
                         file.  This will initiate the installation process. 
                     </p>
                         
-                        <img src="images/installation/Install1.png" alt="install terms">
+                        <img src="images/installation/Install1.png" alt="installation terms and conditions">
 
                     <p> 
                         Once you accept the 
@@ -108,7 +108,7 @@
                         accept the default settings.  
                     </p>
                         
-                        <img src="images/installation/Install2.png" alt="install folder location">
+                        <img src="images/installation/Install2.png" alt="installation choose folder location">
 
                     <p>
                         Next it will give you some checkboxes for whether
@@ -117,7 +117,7 @@
                         the automatic options.  
                     </p>
                         
-                        <img src="images/installation/Install3.png" alt="install options">
+                        <img src="images/installation/Install3.png" alt="setup options">
 
                     <p>
                         Next you can choose your a folder name in the Start Menu.  This is really
@@ -125,7 +125,7 @@
                         better and you will just leave the file name GIT.  
                     </p>
 
-                        <img src="images/installation/Install4.png" alt="Start Folder">
+                        <img src="images/installation/Install4.png" alt="Name Start Menu Folder">
 
                     <p>
                         Now we choose wether we want to use the GIT Bash (terminal) only or 
@@ -137,7 +137,7 @@
                         Terminal and is nearly as safe.  
                     </p>
                         
-                        <img src="images/installation/Install5.png" alt="Terminal Options">
+                        <img src="images/installation/Install5.png" alt="Terminal Setup Options">
 
                     <p>
                         Now just leave the rest of the options on the 
@@ -145,7 +145,7 @@
                         of these choices matter I don't know about it and you can teach me!
                     </p>
 
-                        <img src="images/installation/Install12.png" alt="Installing Now">
+                        <img src="images/installation/Install12.png" alt="Installing">
 
                     <p>
                         Once the installation finishes
@@ -167,7 +167,7 @@
         
         <section id="navigating_the_terminal" class="main-section">
 
-            <header>Navigating The Terminal</header>
+            <header><h4>Navigating The Terminal</h4></header>
             
                 <article>
                     <p>
@@ -186,7 +186,6 @@
                         to my Personal Computer so we see my name username (which is my name) Gabe.  
                     </p>
 
-                    <!--dir Command-->
                     <p>
                         Ok how do we move around and do anything?  We can move around by selecting the folder we want
                         to go to.  It is helpful to know the folder name.  But if you didn't memorize all the folders
@@ -199,7 +198,6 @@
                     <p>
                         The <code>dir</code> command is short for directory.  It shows you the contents of the directory
                         (or folder) you are currently in.  So now you know what all your folder names are.  
-                    <!--cd Command-->
                         So lets pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
                         Directory' and FreeCodeCamp is the name of the folder I selected.  You can always prompt the terminal to
                         auto-complete the folder name by hitting Tab.  If the terminal has options and it guessed wrong you can 
@@ -231,7 +229,7 @@
 
         <section class="main-section" id="creating_and_initiating">
 
-            <header>Creating and initiating</header>
+            <header><h4>Creating and initiating</h4></header>
 
                 <article>
 
@@ -240,7 +238,6 @@
                         create a directory.  So pick a location for this new file.  
                     </p>
     
-                    <!--mkdir command-->
                     <p>
                         Now use your <code>cd</code> command and navigate to the folder where you want your new folder to 
                         be located.  Now enter <code>mkdir DemoFolder</code>.  DemoFolder should be whatever you want your 
@@ -249,7 +246,6 @@
     
                         <img alt="mkdir command" src="images/creating_and_initiating/mkdirCmd.png">
     
-                    <!--git init command-->
                     <p>
                         And now we see a summary below.  We see a line that tells us what our folders parent folders are.
                         And below this we see a summary of our last time we made changes to (or created in this case) our 
@@ -288,7 +284,6 @@
                         We will cover this more later but I don't 
                     </p>
     
-                    <!--git status command-->
                     <p>
                         So how do we know we have a master branch?
                         Let us use the <code>git status</code> command.  
@@ -312,7 +307,7 @@
 
         <section class="main-section" id="adding_and_committing">
 
-            <header>Adding and Committing</header>
+            <header><h4>Adding and Committing</h4></header>
 
                 <article>
 
@@ -321,14 +316,14 @@
                         I am just making a really simple index.html file and giving it a title.  
                     </p>
     
-                        <img src="images/adding_and_committing/Write_html.png" alt="Write HTML">
+                        <img src="images/adding_and_committing/Write_html.png" alt="Creating an HTML file">
     
                     <p>
                         So we wrote code.  Now lets check in with GIT to see what it thinks about this.  So we will
                         use the <code>git status</code> command to check on our new file.  
                     </p>
     
-                        <img src="images/adding_and_committing/staging_git_status.png" alt="Git status in staging">
+                        <img src="images/adding_and_committing/staging_git_status.png" alt="Git status command">
     
                     <p>
                         So we see our new file appear in red.  Everything we saw before after using the <code>git init        
@@ -341,13 +336,13 @@
                         The asterisk is commonly used to denote everything, or all possible in computer science.  
                     </p>
     
-                        <img src="images/adding_and_committing/git_add.png" alt="git add all">
+                        <img src="images/adding_and_committing/git_add.png" alt="git add all command">
     
                     <p>
                         Now we should check the status to see if it really worked.
                     </p>
     
-                        <img src="images/adding_and_committing/added_status.png" alt="added status">
+                        <img src="images/adding_and_committing/added_status.png" alt="git status to verify added status">
     
                     <p>
                         Awesome!  It is green instead of red.  Now GIT is tracking the file.  There is actually a name
@@ -370,7 +365,7 @@
                         hit Enter.  
                     </p>
     
-                        <img src="images/adding_and_committing/commit.png" alt="commit image">
+                        <img src="images/adding_and_committing/commit.png" alt="make a commit">
     
                     <p>
                         And you have executed your first commit!  You will see below <code>[Master (root-commit) 
@@ -400,7 +395,7 @@
 
         <section class="main-section" id="branching">
 
-            <header>Branching</header>
+            <header><h4>Branching</h4></header>
 
                 <article>
 
@@ -415,7 +410,7 @@
                         names that will help you stay organized.  
                     </p>
     
-                        <img src="images/branching/git_branch.png" alt="git branch">
+                        <img src="images/branching/git_branch.png" alt="git branch command">
     
                     <p>
                         And just like that you see <code>Switched to a new branch 'day3'</code> telling you
@@ -454,7 +449,7 @@
 
         <section class="main-section" id="Configuring">
         
-            <header>Configuring</header>
+            <header><h4>Configuring</h4></header>
 
                 <article>
 
@@ -467,7 +462,7 @@
                         config --global user.email user@example.com</code> with your email address. 
                     </p>
     
-                        <img src="images/configuring/Config1.png" alt="Configuring GIT">
+                        <img src="images/configuring/Config1.png" alt="Configuring GIT for your machine">
     
                     <p>
                         For the moment that is plenty.  Onward!
@@ -479,7 +474,7 @@
 
         <section class="main-section" id="creating_a_github_repository">
 
-            <header>Creating a Github Repository</header>
+            <header><h4>Creating a Github Repository</h4></header>
             
                 <article>
                     <p>
@@ -488,7 +483,7 @@
                         create new repository option.  
                     </p>
                                          
-                        <img src="images/creating_new_repository/create_github_repository.png" alt="new repository">
+                        <img src="images/creating_new_repository/create_github_repository.png" alt="new repository setup">
 
                     <p>
                         Choose a title for the repository.  
@@ -528,7 +523,7 @@
 
         <section class="main-section" id="adding_a_remote">
 
-            <header>Adding a Remote</header>
+            <header><h4>Adding a Remote</h4></header>
 
                 <article>
 
@@ -559,7 +554,7 @@
                         Github repository (the origin) to their local machine to work on it.  
                     </p>
                     
-                        <img src="images/adding_a_remote/Add_remote1.png" alt="adding a remote image 1">
+                        <img src="images/adding_a_remote/Add_remote1.png" alt="adding a remote origin URL">
 
                     <p>
                         So that is how you specify the Remote Origin for a GIT repository.  Once you do this 
@@ -578,7 +573,7 @@
                         pushing.  
                     </p>
 
-                        <img src="images/adding_a_remote/Add_remote4.png" alt="pushing master">
+                        <img src="images/adding_a_remote/Add_remote4.png" alt="pushing master to remote origin">
 
                     <p>
                         Github will require you to login in to Github if this is your first time interacting 
@@ -602,7 +597,7 @@
 
         <section class="main-section" id="pushing_your_branch">
 
-            <header>Pushing your branch</header>
+            <header><h4>Pushing your branch</h4></header>
             
                 <article>
                     <p>
@@ -626,7 +621,7 @@
                         So now you can enter <code>git push -u origin day3</code>.  
                     </p>
 
-                        <img src="images/pushing_your_branch/pushing_branch.png" alt="pushing branch">
+                        <img src="images/pushing_your_branch/pushing_branch.png" alt="pushing branch to remote origin">
 
                     <p>
                         Now just like when we pushed the 
@@ -643,7 +638,7 @@
 
         <section class="main-section" id="pull_request">
 
-            <header>Pull Request</header>
+            <header><h4>Pull Request</h4></header>
 
                 <article>
 
@@ -702,7 +697,7 @@
 
         <section class="main-section" id="pulling_master">
             
-            <header>Pulling Master</header>
+            <header><h4>Pulling Master</h4></header>
             
             <article>
                 <p>
@@ -727,7 +722,7 @@
         </section>
         
         <section class="main-section" id="final_steps">
-            <header>Final steps</header>
+            <header><h4>Final steps</h4></header>
             <article>
                 <p>
                     Now we just want to clean up our local GIT repository.  Since we updated or local master 
@@ -743,6 +738,11 @@
             </article>
 
         </section>
+
+        <footer>
+
+            
+        </footer>
 
 
     </main>
