@@ -1,6 +1,26 @@
+let top = document.getElementById("#top");
+let topLink = document.getElementById("#nav-link-top");
+// let navLinks= document.getElementsByClassName("nav-link");
+// let topLink = navLinks[0];
+function focusPocus(el){
+    let elLink= `${el}Link`;
+    elLink.style.backgroundColor = "#2d2330";
+        elLink.style.color = "white";
 
+}
 
+top.addEventListener("focus", top =>{
+    focusPocus(top)    
+});
+
+let assumptions = document.getElementById("introductions_and_assumptions");
+
+assumptions.addEventListener("focus", () =>{
+    navLinks[0].style.backgroundColor = "#2d2330";
+    navLinks[0].style.color = "white"
+});
 /*
+"#top"
 use onfocus onblur, add event listener
 ="#introduction_and_assumptions"
 ="#installation_guide"
