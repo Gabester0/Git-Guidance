@@ -1,24 +1,46 @@
-let top = document.getElementById("#top");
-let topLink = document.getElementById("#nav-link-top");
-// let navLinks= document.getElementsByClassName("nav-link");
-// let topLink = navLinks[0];
-function focusPocus(el){
-    let elLink= `${el}Link`;
-    elLink.style.backgroundColor = "#2d2330";
-        elLink.style.color = "white";
+let navLinks = document.querySelectorAll(".nav-link");
+let sections = document.querySelectorAll(".main-section");
 
-}
+let prev;
+let cur = [];
 
-top.addEventListener("focus", top =>{
-    focusPocus(top)    
+window.addEventListener("scroll", e =>{
+
+    let fromTop = window.scrollY;
+
+    navLinks.forEach(link =>{
+        let section = document.querySelector(link.hash);
+
+        if (section.offsetTop <= fromTop &&
+            section.offsetTop + section.offsetHeight >= fromTop){
+                link.classList.add("current");
+            } else {
+                link.classList.remove("current");
+            }
+    });
 });
 
-let assumptions = document.getElementById("introductions_and_assumptions");
+// let top = document.getElementById("#top");
+// let topLink = document.getElementById("#nav-link-top");
+// // let navLinks= document.getElementsByClassName("nav-link");
+// // let topLink = navLinks[0];
+// function focusPocus(el){
+//     let elLink= `${el}Link`;
+//     elLink.style.backgroundColor = "#2d2330";
+//         elLink.style.color = "white";
 
-assumptions.addEventListener("focus", () =>{
-    navLinks[0].style.backgroundColor = "#2d2330";
-    navLinks[0].style.color = "white"
-});
+// }
+
+// top.addEventListener("focus", top =>{
+//     focusPocus(top)    
+// });
+
+// let assumptions = document.getElementById("introductions_and_assumptions");
+
+// assumptions.addEventListener("focus", () =>{
+//     navLinks[0].style.backgroundColor = "#2d2330";
+//     navLinks[0].style.color = "white"
+// });
 /*
 "#top"
 use onfocus onblur, add event listener
