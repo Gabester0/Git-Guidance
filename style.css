@@ -1,10 +1,12 @@
+/***General Page Rules***/
+
 html {
     scroll-behavior: smooth;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     color: #2d2330;
-
+    overflow-x: hidden;
 }
 
 body {
@@ -27,24 +29,57 @@ body {
     margin: auto;
 }
 
+/***General Page Rules***/
+
 #main-doc {
     display: grid;
     grid-template-columns: 20vw auto;
 }
 
-#navbar {
-    grid-column: 1/2;
-    position: fixed;
-    top: 50px;
-    left: 25px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
+        /*Navigation*/
+        
+        #navbar {
+            grid-column: 1/2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vw;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            border-right: 2px solid #2d2330;
+            padding: 50px 25px 0 0;
+        }
 
-#navbar header {
-    padding: 25px 0;
-}
+        #navbar span,
+        #navbar header {
+            width: 100%;
+            text-align: left;
+            padding: 0 22px 0 5px;
+            margin: 0;
+        }
+
+        #navbar a {
+            text-decoration: none;
+        }
+
+        
+        .current {
+            background-color: #2d2330;
+            padding-left: 25px;
+            padding-right: 0;
+        }
+        .current a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .current a:link,
+        .current a:hover,
+        .current a:active {
+            color: white;
+        }
+
 
 .main-section {
     overflow-x: hidden;
@@ -67,31 +102,35 @@ header {
 }
 
 .secondaryHeader {
-    font-size: 95%;
-    font-weight: 600;
-    text-align: left;
-    margin-left: 25px;
+    font-size: 110%;
+    font-weight: 500;
+    text-align: center;
 }
 
-.main-section ul li {
-    text-align: left;
+.list {
+    width: 60%;
+    margin: auto;
+    text-align: left;    
 }
 
-p,
-img,
-ul {
+img {
     padding: 20px;
     text-align: center;
 }
 
+/***Footer***/
+
+
 footer {
+    display: grid;
+    grid-template-columns: 20vw auto;
     width: 100vw;
-    padding: 25px;
-    margin-bottom: -25px;
-    background-color: silver;
+    left: 0;
+    bottom: 0;
+    margin-top: 100px;
 }
 
-.current {
-    background-color: #2d2330;
-    color: white;
+footer p {
+    grid-column-start: 2;
+    width: 100%;
 }

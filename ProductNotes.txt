@@ -85,10 +85,17 @@
                         [x] Complete + prettify code for Installation
                         [x] Complete + prettify code for Introduction and assumptions
                         [x] Complete + prettify code for Configuring
-        [] Gabe story #21: Fix CSS so that the header and the body align.  
+        [x] Gabe story #21: Fix CSS so that the header and the body align.  
 [] Publish this Guide on Medium
         [] Publish on Medium FCC
         [] Share on Twitter
         [] Share on LinkedIn 
         [] Share on Free Code Camp Forum as part of asking for feedback
         [] Link to this on your LinkedIn Account by sharing this as a publication.  
+
+[] Lighten Plum color background color (too strong/harsh)?
+        [x] Make Navbar Background stretch width of parent
+        [x] Give navbar partial border 
+[] Give Main-section partial border?
+[] Review project compared to article about easy design.   
+        [x] Organize CSS file with comment captions.         
