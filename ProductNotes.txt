@@ -49,9 +49,8 @@
         [x] Gabe Story #17: Catching your local Master up to remote master (don't forget to move back 
             to master branch first)
         [x] Gabe Story #18: Deleting your first branch (now it is really gone.)
-[] Gabe Story: Add a 'terms in this section' with a summary of CLI commands in each section?
-[] Gabe Story: Use JS to make navBar different color depending on what section you are onFocus.  
-[] Gabe Story #19: Apply the FCC Accessibility steps to this project                      
+        [x] Gabe Story: Use JS to make navBar different color depending on what section you are onFocus.  
+        [x] Gabe Story #19: Apply the FCC Accessibility steps to this project                      
                         [x]Add a Text Alternative to Images for Visually Impaired Accessibility
                         [x]Know When Alt Text Should be Left Blank
                         [x]Use Headings to Show Hierarchical Relationships of Content
@@ -59,7 +58,7 @@
                         [x]Wrap Content in the article Element
                         [x]Make Screen Reader Navigation Easier with the header Landmark
                         [x]Make Screen Reader Navigation Easier with the nav Landmark
-                []Make Screen Reader Navigation Easier with the footer Landmark
+                        [x]Make Screen Reader Navigation Easier with the footer Landmark
                         [x]Improve Accessibility of Audio Content with the audio Element
                         [x]Improve Chart Accessibility with the figure Element
                         [x]Improve Form Field Accessibility with the label Element
@@ -73,7 +72,7 @@
                         [x]Give Links Meaning by Using Descriptive Link Text
                         [x]Make Links Navigatable with HTML Access Keys
                         [x]Use tabindex to Add Keyboard Focus to an Element
-                []Use tabindex to Specify the Order of Keyboard Focus for Several Elements
+                        [x]Use tabindex to Specify the Order of Keyboard Focus for Several Elements
                         [x] All img tags have an alt description.
                         [x] Semantic meaning to HTML tags
 
