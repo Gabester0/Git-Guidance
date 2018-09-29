@@ -96,5 +96,7 @@
         [x] Lighten Plum color background color (too strong/harsh)?
         [x] Make Navbar Background stretch width of parent
         [x] Give navbar partial border 
-[] Review project compared to article about easy design.   
-        [x] Organize CSS file with comment captions.         
+        [x] Review project compared to article about easy design.   
+        [x] Organize CSS file with comment captions.  
+        [x] Inspect media queries for navbar current class extending past border and fix this.
+        [x] Find way to reshow nav if window shrunk small and then expanded to full screen again.         

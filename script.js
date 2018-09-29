@@ -35,18 +35,20 @@ let footer = document.getElementsByTagName("footer");
 function navFunction(e){
     var target = e.target;
     if(target.className === "closed"){
-        target.className = "open";
-        target.innerText = "X";
-        navBar.style.margin= 0;
+        target.classList.remove("closed");
+        target.classList.add("open");
+        target.innerText = "\u00AB";
+        navBar.style.opacity = 1;
         sections.forEach(section=>{
             section.style.opacity = 0.1;
         });
         header.style.opacity= 0.1;
         footer[0].style.opacity = 0.1;
     }else if(target.className === "open"){
-        target.className = "closed";
-        target.innerText = "O";
-        navBar.style.marginLeft = "-500px";
+        target.classList.remove("open");
+        target.classList.add("closed");
+        target.innerText = "\u00BB";
+        navBar.style.opacity = 0;
         sections.forEach(section=>{
             section.style.opacity = 1;
         });
@@ -56,76 +58,12 @@ function navFunction(e){
 }
 
 btn.addEventListener("click", navFunction);
+window.addEventListener("resize", sizeCheck);
 
-/*
-var btnMenu = document.getElementById("btn-menu");
-
-btnMenu.addEventListener("click", toggleMenu);
-
-function toggleMenu(e){
- 
-  var eventTarget = e.target;
-  var divOverlay = document.getElementsByClassName("overlay")[0];
-  var speed = 10;
- 
- if(eventTarget.className == "btn-open"){
-    fadeIn(divOverlay, speed);
-    eventTarget.className = "btn-close";
-   
- } else if (eventTarget.className == "btn-close"){
-    fadeOut(divOverlay, speed);
-    eventTarget.className = "btn-open";
- }
- 
-}
-
-
-function fadeIn(elem, speed){
-  var inInterval = setInterval(function(){
-    
-    elem.style.opacity = Number(elem.style.opacity) + 0.2;
-    if(elem.style.opacity >= 1){
-      elem.style.opacity = 1;
-      clearInterval(inInterval);
+function sizeCheck(){
+    if(window.innerWidth > 730){
+        navBar.style.opacity === 0 ? navBar.style.opacity = 1 : navBar.style.opacity = 1;
+    } else if (window.innerWidth <= 730){
+        btn.style.className === "closed" ? navBar.style.opacity = 0 : navBar.style.opacity = 0;
     }
-    
-  }, speed);
 }
-
-function fadeOut(elem, speed){
-  var outInterval = setInterval(function(){
-    
-    elem.style.opacity = Number(elem.style.opacity) - 0.2;
-    if(elem.style.opacity <= 0){
-      elem.style.opacity = 0;
-      clearInterval(outInterval);
-    }
-    
-  }, speed);
-}
-
-*/
-//Target Span instead of parent? 
-// let nav = document.getElementById("navbar");
-
-// nav.addEventListener("mouseenter", e=>{
-//     if(nav.style.width < 70){
-//         nav.style.width = "auto";
-//         nav.style.fontWeight = 700;
-//         document.getElementById("topHeader").style.opacity = 0.1;
-//         sections.forEach(section =>{
-//             section.style.opacity = 0.1;
-//         });
-//     }
-// });
-
-// nav.addEventListener("mouseleave", e=>{
-//     if(nav.style.width === "auto"){
-//         nav.style.width = "50px";
-//         nav.style.fontWeight = 400;
-//         document.getElementById("topHeader").style.opacity = 1;
-//         sections.forEach(section =>{
-//             section.style.opacity = 1;
-//         });
-//     }
-// });
