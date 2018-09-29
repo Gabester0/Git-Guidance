@@ -47,12 +47,12 @@ body {
             display: flex;
             flex-direction: column;
             text-align: left;
-            border-right: 2px solid #3c323f;
-            padding: 50px 25px 0 0;
+            box-shadow: 2px 0 4px #3c323f;
+            padding: 50px 0px 0 0;
         }
 
         #btn {
-            font-size: 150%;
+            font-size: 300%;
             padding:0;
             margin: auto;
             top: 0;
@@ -61,7 +61,7 @@ body {
 
         #navbar span,
         #navbar header {
-            width: 100%;
+            width: auto;
             text-align: left;
             padding: 0 22px 0 5px;
             margin: 0;
@@ -74,19 +74,26 @@ body {
         
         .current {
             background-color: #3c323f;
-            padding-left: 25px;
-            padding-right: 0;
         }
         .current a {
             color: white;
             text-decoration: none;
+            opacity: 0.8;
         }
 
         .current a:link,
         .current a:hover,
         .current a:active {
             color: white;
-            padding-left: 25px;
+            opacity: 0.8;
+        }
+
+        
+        .open {
+            z-index: 10;
+        }
+        .closed {
+            z-index: 10;
         }
 
 
@@ -102,6 +109,7 @@ body {
 
 img {
     max-width: 70%;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 header {
@@ -131,10 +139,10 @@ img {
 footer {
     display: grid;
     grid-template-columns: 20vw auto;
-    width: 100vw;
+    max-width: 75vw;
+    margin: 100px auto;
     left: 0;
     bottom: 0;
-    margin-top: 100px;
 }
 
 footer p {
@@ -144,20 +152,6 @@ footer p {
 
 
 /***Media Queries***/
-
-@media (max-height: 555px) {
-
-    #navbar {
-        top: 0;
-        left: 0;
-        position: fixed;
-        overflow-y: scroll;
-    }
-    #navbar span:last-child {
-        margin-bottom: 50px;
-    }
-}
-
 
 @media (max-width: 1400px){
     .main-section {
@@ -183,8 +177,14 @@ footer p {
         margin: 0 0 0 50px;
     }
     #navbar {
-        padding: 50px 5px 0 0;
+        padding: 50px 0 0 0;
     }
+
+    #navbar span,
+    #navbar header {
+        padding: 0 10px 0 5px;
+    }
+
     footer {
         grid-template-columns: 20vw 1fr;
     }
@@ -219,11 +219,7 @@ footer p {
     }
     #navbar span,
     #navbar header {
-        padding: 0 0 0 5px;
-    }
-
-    .current {
-        padding-left: 5px;
+        padding: 0 5px 0 5px;
     }
 
     #main-doc img {
@@ -237,39 +233,18 @@ footer p {
 
 @media (max-width: 730px){
     #navbar {
-        margin: -500px;
-        z-index: 1;
+        opacity: 0;
     }
 
     #btn {
         display: inline;
         position: fixed;
-        top: 6px;
+        top: 3px;
         left: 50px;
         font-weight: 800;
         cursor: pointer;
     }
 
-    .open {
-        z-index: 10;
-    }
-    .closed {
-        z-index: 10;
-    }
-    
-    #navbar span,
-    #navbar header {
-        padding: 0 0 0 5px;
-    }
-
-    .current {
-        padding-left: 0;
-    }
-    .current a:link,
-    .current a:hover,
-    .current a:active {
-        padding-left: 0px;
-    }
     #topHeader {
         grid-template-columns: auto 1fr;
         width: 100%;
@@ -304,4 +279,19 @@ footer p {
         width: 1fr;
     }
 
+}
+
+
+@media (max-height: 555px) {
+
+    #navbar {
+        top: 0;
+        left: 0;
+        position: fixed;
+        overflow-y: scroll;
+    }
+
+    #navbar span:last-child {
+        margin-bottom: 50px;
+    }
 }
