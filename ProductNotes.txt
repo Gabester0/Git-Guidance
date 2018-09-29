@@ -15,7 +15,7 @@
         [x] User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world").
         [x] User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.
         [x] User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
-[] User Story #15: My Technical Documentation page should use at least one media query.
+        [x] User Story #15: My Technical Documentation page should use at least one media query.
         [x] You can build your project by forking this CodePen pen. Or you can use this CDN link to run the tests in any environment you like: https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 [] Once you're done, submit the URL to your working project with all its tests passing.
 
@@ -93,9 +93,8 @@
         [] Share on Free Code Camp Forum as part of asking for feedback
         [] Link to this on your LinkedIn Account by sharing this as a publication.  
 
-[] Lighten Plum color background color (too strong/harsh)?
+        [x] Lighten Plum color background color (too strong/harsh)?
         [x] Make Navbar Background stretch width of parent
         [x] Give navbar partial border 
-[] Give Main-section partial border?
 [] Review project compared to article about easy design.   
         [x] Organize CSS file with comment captions.         
