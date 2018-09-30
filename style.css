@@ -71,11 +71,6 @@ body {
   text-decoration: none;
 }
 
-#navbar a:link,
-#navbar a:hover,
-#navbar a:active {
-    color: #3c323f;
-}
 
 .current {
   background-color: #3c323f;
@@ -87,7 +82,9 @@ body {
 }
 
 .current a:link,
+.current a:visited,
 .current a:hover,
+.current a:focus,
 .current a:active {
   color: white;
   opacity: 0.8;
