@@ -1,297 +1,292 @@
 /***General Page Rules***/
 
 html {
-    scroll-behavior: smooth;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #3c323f;
-    overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #3c323f;
+  overflow-x: hidden;
 }
 
 body {
-    text-align:center;
-    line-height: 200%;
-    font-size: 18px;
-    font-weight: 400;
+  text-align: center;
+  line-height: 200%;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 #topHeader {
-    padding: 100px 0;
-    display: grid;
-    grid-template-columns: 20vw auto;
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 20vw auto;
 }
 
 #topHeader h1 {
-    font-size: 350%;
-    grid-column-start: 2;
-    max-width: 75vw;
-    margin: auto;
+  font-size: 350%;
+  grid-column-start: 2;
+  max-width: 75vw;
+  margin: auto;
 }
 
 /***General Page Rules***/
 
 #main-doc {
-    display: grid;
-    grid-template-columns: 20vw auto;
+  display: grid;
+  grid-template-columns: 20vw auto;
 }
 
-        /*Navigation*/
-        
-        #navbar {
-            grid-column: 1/2;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            box-shadow: 2px 0 4px #3c323f;
-            padding: 50px 0px 0 0;
-        }
+/*Navigation*/
 
-        #btn {
-            font-size: 300%;
-            padding:0;
-            margin: auto;
-            top: 0;
-            display: none;
-        }
+#navbar {
+  grid-column: 1/2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: 2px 0 4px #3c323f;
+  padding: 50px 0px 0 0;
+}
 
-        #navbar span,
-        #navbar header {
-            width: auto;
-            text-align: left;
-            padding: 0 22px 0 5px;
-            margin: 0;
-        }
+#btn {
+  font-size: 300%;
+  padding: 0;
+  margin: auto;
+  top: 0;
+  display: none;
+}
 
-        #navbar a {
-            text-decoration: none;
-        }
+#navbar span,
+#navbar header {
+  width: auto;
+  text-align: left;
+  padding: 0 22px 0 5px;
+  margin: 0;
+}
 
-        
-        .current {
-            background-color: #3c323f;
-        }
-        .current a {
-            color: white;
-            text-decoration: none;
-            opacity: 0.8;
-        }
+#navbar a {
+  text-decoration: none;
+}
 
-        .current a:link,
-        .current a:hover,
-        .current a:active {
-            color: white;
-            opacity: 0.8;
-        }
+#navbar a:link,
+#navbar a:hover,
+#navbar a:active {
+    color: #3c323f;
+}
 
-        
-        .open {
-            z-index: 10;
-        }
-        .closed {
-            z-index: 10;
-        }
+.current {
+  background-color: #3c323f;
+}
+.current a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
 
+.current a:link,
+.current a:hover,
+.current a:active {
+  color: white;
+  opacity: 0.8;
+}
+
+.open {
+  z-index: 10;
+}
+.closed {
+  z-index: 10;
+}
 
 .main-section {
-    grid-column-start: 2;
-    position: relative;
-    max-width: 75vw;
+  grid-column-start: 2;
+  position: relative;
+  max-width: 75vw;
 }
 
 .main-section header {
-    margin: 50px 0;
+  margin: 50px 0;
 }
 
 img {
-    max-width: 70%;
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  max-width: 70%;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 header {
-    font-size: 110%;
-    font-weight: 700;
+  font-size: 110%;
+  font-weight: 700;
 }
 
 .secondaryHeader {
-    font-size: 110%;
-    font-weight: 500;
-    text-align: center;
+  font-size: 110%;
+  font-weight: 500;
+  text-align: center;
 }
 
 .list {
-    width: 60%;
-    margin: auto;
-    text-align: left;    
+  width: 60%;
+  margin: auto;
+  text-align: left;
 }
 
 img {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 /***Footer***/
 
-
 footer {
-    display: grid;
-    grid-template-columns: 20vw auto;
-    max-width: 75vw;
-    margin: 100px auto;
-    left: 0;
-    bottom: 0;
+  display: grid;
+  grid-template-columns: 20vw auto;
+  max-width: 75vw;
+  margin: 100px auto;
+  left: 0;
+  bottom: 0;
 }
 
 footer p {
-    grid-column-start: 2;
-    width: 100%;
+  grid-column-start: 2;
+  width: 100%;
 }
-
 
 /***Media Queries***/
 
-@media (max-width: 1400px){
-    .main-section {
-        max-width: 60vw;
-        margin: auto;
-    }
+@media (max-width: 1400px) {
+  .main-section {
+    max-width: 60vw;
+    margin: auto;
+  }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
+  #topHeader {
+    grid-template-columns: 20vw 1fr;
+  }
 
-    #topHeader {
-        grid-template-columns: 20vw 1fr;
-    }
+  #topHeader h1 {
+    font-size: 300%;
+    max-width: 50vw;
+    padding-left: 7vw;
+  }
 
-    #topHeader h1 {
-        font-size: 300%;
-        max-width: 50vw;
-        padding-left: 7vw;
-    }
+  #main-doc {
+    grid-template-columns: 20vw 1fr;
+    margin: 0 0 0 50px;
+  }
+  #navbar {
+    padding: 50px 0 0 0;
+  }
 
-    #main-doc {
-        grid-template-columns: 20vw 1fr;
-        margin: 0 0 0 50px;
-    }
-    #navbar {
-        padding: 50px 0 0 0;
-    }
+  #navbar span,
+  #navbar header {
+    padding: 0 10px 0 5px;
+  }
 
-    #navbar span,
-    #navbar header {
-        padding: 0 10px 0 5px;
-    }
-
-    footer {
-        grid-template-columns: 20vw 1fr;
-    }
-    footer p {
-        max-width: 50vw;
-        margin: auto;
-    }
+  footer {
+    grid-template-columns: 20vw 1fr;
+  }
+  footer p {
+    max-width: 50vw;
+    margin: auto;
+  }
 }
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
+  body {
+    font-size: 16px;
+  }
 
-    body {
-        font-size: 16px;
-    }
+  #topHeader {
+    grid-template-columns: 0.5fr 1fr;
+    width: 100%;
+    padding: 50px 0;
+  }
 
-    #topHeader {
-        grid-template-columns: .5fr 1fr;
-        width: 100%;
-        padding: 50px 0;
-    }
+  #topHeader h1 {
+    font-size: 275%;
+    max-width: 1fr;
+    margin: auto;
+    padding: 0;
+  }
 
-    #topHeader h1 {
-        font-size: 275%;
-        max-width: 1fr;
-        margin: auto;
-        padding: 0;
-    }
+  #main-doc {
+    grid-template-columns: 0.5fr 1fr;
+    margin: 0 10px;
+  }
+  #navbar span,
+  #navbar header {
+    padding: 0 5px 0 5px;
+  }
 
-    #main-doc {
-        grid-template-columns: .5fr 1fr;
-        margin: 0 10px;
-    }
-    #navbar span,
-    #navbar header {
-        padding: 0 5px 0 5px;
-    }
-
-    #main-doc img {
-        max-width: 100%;
-    }
-    footer {
-        grid-template-columns: .5fr 1fr;
-
-    }
+  #main-doc img {
+    max-width: 100%;
+  }
+  footer {
+    grid-template-columns: 0.5fr 1fr;
+  }
 }
 
-@media (max-width: 730px){
-    #navbar {
-        opacity: 0;
-    }
+@media (max-width: 730px) {
+  #navbar {
+    opacity: 0;
+  }
 
-    #btn {
-        display: inline;
-        position: fixed;
-        top: 3px;
-        left: 50px;
-        font-weight: 800;
-        cursor: pointer;
-    }
+  #btn {
+    display: inline;
+    position: fixed;
+    top: 3px;
+    left: 50px;
+    font-weight: 800;
+    cursor: pointer;
+  }
 
-    #topHeader {
-        grid-template-columns: auto 1fr;
-        width: 100%;
-        padding: 50px 0;
-    }
+  #topHeader {
+    grid-template-columns: auto 1fr;
+    width: 100%;
+    padding: 50px 0;
+  }
 
-    #topHeader h1 {
-        font-size: 275%;
-        width: 1fr;
-        margin: auto;
-        padding: 0;
-    }
+  #topHeader h1 {
+    font-size: 275%;
+    width: 1fr;
+    margin: auto;
+    padding: 0;
+  }
 
-    #main-doc {
-        grid-template-columns: auto 1fr;
-        margin: 0 10px;
-    }
+  #main-doc {
+    grid-template-columns: auto 1fr;
+    margin: 0 10px;
+  }
 
-    .main-section {
-        width: 1fr;
-    }
+  .main-section {
+    width: 1fr;
+  }
 
-    .main-section img {
-        max-width: 1fr;
-    }
+  .main-section img {
+    max-width: 1fr;
+  }
 
-    footer {
-        grid-template-columns: auto 1fr;
-    }
+  footer {
+    grid-template-columns: auto 1fr;
+  }
 
-    footer p {
-        width: 1fr;
-    }
-
+  footer p {
+    width: 1fr;
+  }
 }
-
 
 @media (max-height: 555px) {
+  #navbar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: scroll;
+  }
 
-    #navbar {
-        top: 0;
-        left: 0;
-        position: fixed;
-        overflow-y: scroll;
-    }
-
-    #navbar span:last-child {
-        margin-bottom: 50px;
-    }
+  #navbar span:last-child {
+    margin-bottom: 50px;
+  }
 }

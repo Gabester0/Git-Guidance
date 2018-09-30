@@ -88,9 +88,8 @@
         [x] Gabe story #21: Fix CSS so that the header and the body align.  
 [] Publish this Guide on Medium
         [] Publish on Medium FCC
-        [] Share on Twitter
-        [] Share on LinkedIn 
-        [] Share on Free Code Camp Forum as part of asking for feedback
+                [x] Share on Twitter
+                [x] Share on Free Code Camp Forum as part of asking for feedback
         [] Link to this on your LinkedIn Account by sharing this as a publication.  
 
         [x] Lighten Plum color background color (too strong/harsh)?

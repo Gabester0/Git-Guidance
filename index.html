@@ -41,9 +41,10 @@
             <header tabindex="15"><h4>Introduction and Assumptions</h4></header>
                 <article>
                     <p>
-                        Thanks for looking at my introductory Git Guide.  I recently went from zero
-                        to greater than zero with regards to my Git skills thanks to the guidance 
-                        of others and I want to help others do the same thing.  I hope you find this
+                        Thanks for looking at my introductory Git Guide.  I recently went from someone with 
+                        zero knowledge of GIT
+                        to someone comfortable using GIT every day thanks to the guidance 
+                        of others.  I want to help others do the same thing.  I hope you find this
                         guide helpful.  This is not a comprehensive guide to all beginner skills.  This
                         is simply a guide that can walk you through how to implement GIT into your 
                         regular workflow with minimal fuss and command memorization.    
@@ -78,7 +79,7 @@
             <header tabindex="16"><h4>Installation Guide</h4></header>
                 <article>
                     <p>
-                        All right lets get going!  What is GIT?  It is a free open-source 
+                        Alright, lets get going!  What is GIT?  It is a free open-source 
                         Version Control system.  What does that mean for you?  There are 
                         a lot of different really good reasons to use GIT.  The simplest 
                         answer in my opinion is that GIT allows you to fearlessly play, 
@@ -109,8 +110,8 @@
                         <img src="images/installation/Install2.png" alt="installation choose folder location">
 
                     <p>
-                        Next it will give you some checkboxes for whether
-                        you want the a desktop shortcut, a GIT GUI (or graphical user interface), 
+                        Next, it will give you some checkboxes for whether
+                        you want a desktop shortcut, a GIT GUI (or graphical user interface), 
                         and other options.  I recommend doing whatever you want but don't unselect 
                         the automatic options.  
                     </p>
@@ -118,7 +119,7 @@
                         <img src="images/installation/Install3.png" alt="setup options">
 
                     <p>
-                        Next you can choose your a folder name in the Start Menu.  This is really
+                        Then you can choose your a folder name in the Start Menu.  This is really
                         just where you would go to look for GIT.  If you are like me simple is 
                         better and you will just leave the file name GIT.  
                     </p>
@@ -128,7 +129,7 @@
                     <p>
                         Now we choose wether we want to use the GIT Bash (terminal) only or 
                         Windows Command Prompt (the windows terminal).  There is a third option that you 
-                        will want to ignore because it is the most risky option.  The Git Bash is a GIT 
+                        will want to ignore because it is the riskiest option.  The Git Bash is a GIT 
                         terminal that allows you 
                         to enter commands.  This option is the safest.  I would stick with the default 
                         Windows terminal because this lets you use either the GIT Bash or the Windows
@@ -139,14 +140,14 @@
 
                     <p>
                         Now just leave the rest of the options on the 
-                        default settings and click next until it begins installation.  If any 
+                        default settings and click next until it begins the installation.  If any 
                         of these choices matter I don't know about it and you can teach me!
                     </p>
 
                         <img src="images/installation/Install12.png" alt="Installing">
 
                     <p>
-                        Once the installation finishes
+                        Once the installation finishes,
                         you can select the checkbox that says to open the GIT Bash.  
                     </p>
                         
@@ -185,7 +186,7 @@
                     </p>
 
                     <p>
-                        Ok how do we move around and do anything?  We can move around by selecting the folder we want
+                        Ok, how do we move around and do anything?  We can move around by selecting the folder we want
                         to go to.  It is helpful to know the folder name.  But if you didn't memorize all the folders
                         inside your computer it isn't quite so simple.  But we have a command to see where you are.  Type 
                         <code>dir</code> into the terminal and hit enter.  
@@ -196,7 +197,7 @@
                     <p>
                         The <code>dir</code> command is short for directory.  It shows you the contents of the directory
                         (or folder) you are currently in.  So now you know what all your folder names are.  
-                        So lets pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
+                        So let's pick a folder.  To go into a folder type <code>cd FreeCodeCamp</code>.  CD stands for 'Change 
                         Directory' and FreeCodeCamp is the name of the folder I selected.  You can always prompt the terminal to
                         auto-complete the folder name by hitting Tab.  If the terminal has options and it guessed wrong you can 
                         keep hitting tab until you see the right folder name.  When you see the correct folder name 
@@ -217,7 +218,7 @@
                 
                     <p>
                         Now you are back in the Gabe folder where we started.  This is how you navigate around the 
-                        terminal.  When you want to use GIT on a group of files you want to navigagte to the folder
+                        terminal.  When you want to use GIT on a group of files you want to navigate to the folder
                         in question.  See you in the next section.  
                     </p>
             
@@ -233,7 +234,7 @@
 
                     <p>
                         So now we know how to navigate around our files and we have GIT installed.  So first we are going
-                        create a directory.  So pick a location for this new file.  
+                        to create a directory.  So pick a location for this new file.  
                     </p>
     
                     <p>
@@ -246,7 +247,7 @@
     
                     <p>
                         And now we see a summary below.  We see a line that tells us what our folders parent folders are.
-                        And below this we see a summary of our last time we made changes to (or created in this case) our 
+                        And below this, we see a summary of our last time we made changes to (or created in this case) our 
                         folder and the name of our new folder DemoFolder.  
                         Now we can go into the folder we created.  Now that we are in our folder we can initiate GIT.  We
                         do this with the <code>git init</code> command. 
@@ -255,17 +256,17 @@
                         <img alt="git init command" src="images/creating_and_initiating/gitInitCmd.png">
     
                     <p>
-                        What does this mean?  On a technical level I don't know entirely.  Don't overthink it.  Basically 
-                        your should think of this as similar to installing an app on your device.  You have to do it to use it.  
+                        What does this mean?  On a technical level, I don't know entirely.  Don't overthink it.  Basically, 
+                        you should think of this as similar to installing an app on your device.  You have to do it to use it.  
                         With GIT you have to install it For every device you use it on.  And you have to initiate it in every
-                        folder you want to use it with.  As a rule you will pick your project's primary folder that will 
+                        folder you want to use it with.  As a rule, you will pick your project's primary folder that will 
                         contain all the files and folders associated with it and initiate GIT in that folder.   
                     </p>
     
                     <p>
-                        So initiating GIT basically adds GIT to the folder your are in and this will allow you to use
+                        So initiating GIT basically adds GIT to the folder you are in and this will allow you to use
                         GIT to track your files inside this folder.  <code>git init</code> also creates a Master branch 
-                        for you automatically.  So what are branches?  Basically branches are what allow you to have 
+                        for you automatically.  So what are branches?  Basically, branches are what allow you to have 
                         and keep organized multiple versions of your code.  The Master branch is the default branch.  
                         Typically you want to keep your Master branch clean.  If you want to try something that 
                         might not work you make a separate branch to mess with it.  Each time you make a branch you 
@@ -274,24 +275,25 @@
                         A helpful way to think of this is the Master branch is for stable code that you know works.  
                         Anything experimental or unstable (a work in progress) is better worked on in a branch.  This allows
                         you to minimize the time lost due to failed experiments that changed parts of your code that worked.  
-                        And combining (or merging) your succesful experiments is easy.  
+                        And combining (or merging) your successful experiments is easy.  
                     </p>
 
                     <p>
                         We will only be covering merging branches on Github.  You can merge branches on your local machine.  
-                        We will cover this more later but I don't 
+                        We will cover merging later.  I don't currently write much code that I don't post to Github so 
+                        I usually only merge branches on Github.  
                     </p>
     
                     <p>
-                        So how do we know we have a master branch?
+                        So how do we know we have the master branch I referenced?
                         Let us use the <code>git status</code> command.  
                     </p>
     
                         <img alt="GIT status command" src="images/creating_and_initiating/gitStatusCmd.png">
     
                     <p>
-                        This is a really useful versatile command.  It will tell you what is going on with regards to GIT.
-                        For example we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
+                        This is a really useful command.  It will tell you what is going on with regards to GIT.
+                        For example, we have GIT initiated in our empty <code>DemoFolder</code>.  We can tell that GIT is 
                         active because we see a status update.  We are on Branch Master.  No Commits yet.  Commits are how 
                         changes are packaged up.  If you add all your changes into the commit you are basically bundling
                         your entire branch into the commit.  If you select individual files to add then you are not
@@ -317,7 +319,7 @@
                         <img src="images/adding_and_committing/Write_html.png" alt="Creating an HTML file">
     
                     <p>
-                        So we wrote code.  Now lets check in with GIT to see what it thinks about this.  So we will
+                        So we wrote some code.  Now let's check in with GIT to see what it thinks about this.  So we will
                         use the <code>git status</code> command to check on our new file.  
                     </p>
     
@@ -326,12 +328,12 @@
                     <p>
                         So we see our new file appear in red.  Everything we saw before after using the <code>git init        
                         </code> command is still there along with text telling us that there are untracked files.  
-                        Then it lists the files or file that is untracked.  Below this we see it tells us how to change 
+                        Then it lists the files or file that is untracked.  Below this, we see it tells us how to change 
                         this.  This tells us that GIT is aware of the file.  But we haven't asked GIT to track the file
                         for us yet so it isn't.  So let's do that.  You can either use the file name to do this by typing
                         <code>git add index.html</code>.  This way works if you only want to add some files to be tracked
-                        but not others.  In our case we will use <code>git add *</code> to add everything to be tracked.  
-                        The asterisk is commonly used to denote everything, or all possible in computer science.  
+                        but not others.  In our case, we will use <code>git add *</code> to add everything to be tracked.  
+                        The asterisk is commonly used to denote everything or all possible in computer science.  
                     </p>
     
                         <img src="images/adding_and_committing/git_add.png" alt="git add all command">
@@ -355,10 +357,10 @@
                     </p>
                 
                     <p>
-                        So lets make a commit.  When you make a commit you are strongly encouraged to include a commit 
+                        So let's make a commit.  When you make a commit you are strongly encouraged to include a commit 
                         message.  This is considered a good practice because GIT is often used by teams of developers who 
                         are all working on the same code base so more communication is usually helpful.  There is a way to
-                        do this without but why not set good habits and practice writing a short meaninful message about 
+                        do this without but why not set good habits and practice writing a short meaningful message about 
                         what your commit will contain.  So we will write <code>git commit -m 'First commit'</code> and 
                         hit Enter.  
                     </p>
@@ -368,12 +370,12 @@
                     <p>
                         And you have executed your first commit!  You will see below <code>[Master (root-commit) 
                         a084555] First commit</code>.  
-                        This is telling you that you have made a commit to the Master Branch.  Then there is a id number
+                        This is telling you that you have made a commit to the Master Branch.  Then there is an id number
                         for this commit along with the message we wrote.  We also see a summary
                         of what was in the commit.  It says that there were 13 insertions because before there was 
                         no index.html file and now our master branch has this file.  The index.html file is thirteen
-                        lines long so GIT counts each line as an insertion.  Now the we have made a commit to the Master
-                        branch.  In this process we simply made changes by adding a file.  Then we committed that to 
+                        lines long so GIT counts each line as an insertion.  Now we have made a commit to the Master
+                        branch.  In this process, we simply made changes by adding a file.  Then we committed that to 
                         the master branch.  This means that we basically merged our changes into the Master branch.  
                         This is a perfectly good way of changing the file.  It is better to only use this method 
                         if you are doing things you know you know how to do.  If you are making changes you are not 
@@ -381,7 +383,7 @@
                     </p>
                     
                     <p>    
-                        In the next section we will learn about making branches and how that can 
+                        In the next section, we will learn about making branches and how that can 
                         allow us to make changes and then get rid of them or keep them without having to remember what
                         all our changes were.  
                     </p>
@@ -398,11 +400,11 @@
                 <article>
 
                     <p>
-                        Branches are something that allows you to create a dublicate of your current repository.  The 
+                        Branches are something that allows you to create a duplicate of your current repository.  The 
                         can be deleted, saved, or merged with the master.  Creating a branch is quick and easy.  To do
                         this you use the <code>git checkout -b yourBranchNameHere</code>.  <code>Checkout</code> means you are 
                         switching to this branch.  <code>-b</code> is for branch.  <code>yourBranchNameHere</code> is going
-                        to be whatever you want this branch to be named.  For our examples we will call it day3 because that 
+                        to be whatever you want this branch to be named.  For our examples, we will call it day3 because that 
                         is the name from some of my example screenshots!  Feel free to name these whatever you want.  When 
                         in doubt it is probably wise to be pretty formulaic in your name choices.  Try to give branches 
                         names that will help you stay organized.  
@@ -413,8 +415,8 @@
                     <p>
                         And just like that you see <code>Switched to a new branch 'day3'</code> telling you
                         that you switched to a new branch.  Now you can go crazy and do whatever you want.  Or if you 
-                        want to go back to master branch you can say <code>git checkout master</code>.  <code>git checkout</code>
-                        will take you back and forth.  If your get confused <code>git branch</code> will tell you which branch you
+                        want to go back to your master branch you can say <code>git checkout master</code>.  <code>git checkout</code>
+                        will take you back and forth.  If you get confused <code>git branch</code> will tell you which branch you
                         are in and list all other branches.  You can think of it as checking out a branch to your code editor where 
                         you can work on it and modify it.  If you make changes to your current branch and try to switch branches 
                         without adding your changes to the staging area GIT will stop you.  You can add and commit changes to 
@@ -433,7 +435,7 @@
                         This is everything that we are going to cover here regarding using GIT locally.  You can do just 
                         this and be perfectly happy.  If keeping your code private is a concern you may prefer to only 
                         use GIT locally.  GIT is an open-source free Source Control software.  Github is a company that is 
-                        built on top of GIT which you can use to share your code with others, collabaratively code with others,
+                        built on top of GIT which you can use to share your code with others, collaboratively code with others,
                         and more.  Github is a wonderful site if you want people to see your code.  You can use
                         Github with privately but it costs money.  The rest of this guide will cover configuring your 
                         GIT setup, creating a repository, adding a remote connection, pushing our master to the remote
@@ -452,7 +454,7 @@
                 <article>
 
                     <p>
-                        So in this section we are going to use the <code>git config</code> command to set up GIT. 
+                        So in this section, we are going to use the <code>git config</code> command to set up GIT. 
                         <code>config</code> is obviously an abbreviation for configure.  So we are telling GIT that we
                         want to configure our global settings.  So we are going to first enter this command <code>git 
                         config --global user.name "User name"</code> with your name in the quotation marks.  Then
@@ -485,8 +487,8 @@
 
                     <p>
                         Choose a title for the repository.  
-                        If you want to you can add a description of the project.  There are
-                        few more options like choosing a liscence for your project.  This isn't 
+                        If you want to you can add a description of the project.  There are a
+                        few more options like choosing a license for your project.  This isn't 
                         going to matter much today with our example repository so don't worry 
                         about this.  There is an option to select a .gitignore.  Leave this as none.
                         There is also an option to initialize your repository with a
@@ -502,14 +504,14 @@
                         Now pause on this screen.  This screen gives us instructions for different
                         scenarios.  We want the second option "Push an existing repository from the 
                         command line."  You can actually just click the clipboard icon to the right
-                        and then paste (Ctrl-V) the code into the command line.  I reccomend typing 
+                        and then paste (Ctrl-V) the code into the command line.  I recommend typing 
                         the commands manually instead to get used to them.  Having to manually type
                         commands helps you to notice the parts of the command without forcing yourself
                         to.  It can also be better if you tend to learn by doing.  
                     </p>
 
                     <p>
-                        For our example you have me to guide you and we won't be doing it exactly
+                        For our example, you have me to guide you and we won't be doing it exactly
                         the same because we are going a little out of order.  But just know that if you
                         want Github to tell you what to do you need to not initialize your repository with a
                         ReadMe.  
@@ -534,21 +536,21 @@
                         that is empty.  So the first thing we need to do is establish our master branch in 
                         the new empty Github repository.  The Github repository is what we call a remote.  
                         It is a remote machine (a Github server located who knows where) that houses our
-                        repository.  So first of all we actually need to go back to the terminal and switch 
+                        repository.  So, first of all, we actually need to go back to the terminal and switch 
                         from our day3 branch to the 
-                        master branch.  If we forgot this we would end up with the Master and our day3 branch
+                        master branch.  If we forget this we would end up with the Master and our day3 branch
                         switched with each other on Github which would just be confusing and cause issues.
                     </p>
 
                     <p>
-                        Ok now we are ready to add the remote.  So So the command is <code>git remote add origin
+                        Ok, now we are ready to add the remote.  So So the command is <code>git remote add origin
                         https://github.com/yourUserName/yourRepositoryName.Git</code>.  So we telling GIT that 
                         the command is about a Remote and we want it to add an origin.  So first, the name origin
                         is referring to the URL for your repository.  The end of the command is your repositories 
                         URL with <code>.Git</code> added onto the end.  So the Remote Origin we are adding is 
                         a destination URL where we push our code to add it to the Github repository.  But why 
                         is it called an origin instead of a destination?  Because often when people use Github 
-                        they are working collabaratively and they are cloning (or copying) the code from the 
+                        they are working collaboratively and they are cloning (or copying) the code from the 
                         Github repository (the origin) to their local machine to work on it.  
                     </p>
                     
@@ -564,7 +566,7 @@
                     </p>
 
                     <p>
-                        Now we want to push master branch.  <code>git push -u origin master</code> is the command 
+                        Now we want to push our master branch.  <code>git push -u origin master</code> is the command 
                         to do this.  <code>git push</code> tells GIT you are pushing (or sending) something.  <code>-u
                         </code> tells GIT that the next thing is a URL.  Origin is the keyword that you use to
                         refer to the Remote Origin.  And lastly <code>master</code> is the code branch we are 
@@ -574,7 +576,7 @@
                         <img src="images/adding_a_remote/Add_remote4.png" alt="pushing master to remote origin">
 
                     <p>
-                        Github will require you to login in to Github if this is your first time interacting 
+                        Github will require you to login into Github if this is your first time interacting 
                         with Github from the command line on this machine.  
                     </p>
 
@@ -624,7 +626,7 @@
                     <p>
                         Now just like when we pushed the 
                         master branch you will see a notice telling you that there is a new branch named day3 in the 
-                        remote repository.  Lets go create a pull request!
+                        remote repository.  Let's go create a pull request!
                     </p>
 
                         <img src="images/pushing_your_branch/pushing_branch_result.png" alt="New branch on Github">
@@ -645,8 +647,8 @@
                         owner that you made changes or additions to their code and asking them to approve the
                         changes and merge them into their repository.  They can then approve and merge the 
                         pull request, suggest improvements to you should make, or reject the pull request.  
-                        For us it is a little pointless since we are the repository owner and the ones making
-                        the pull request to ourselves!  But it is good practice for collabarating with people.  
+                        For us, it is a little pointless since we are the repository owner and the ones making
+                        the pull request to ourselves!  But it is good practice for collaborating with people.  
                         Also it creates documentation of your coding process.  This is very useful if you want
                         to work professionally as a developer.
                     </p>
@@ -660,9 +662,9 @@
 
                     <p>
                         This will give you the option to add comments to attach to the pull request.  Above
-                        the comment box Github tells you that you are comparing Master and Day3 branches.  
+                        the comment box, Github tells you that you are comparing Master and Day3 branches.  
                         Next to this there is a green checkmark and 'Able To Merge.'  This is good.  It means
-                        that there are no conflicts between to the 2 branches and GIT can merge them.  Go 
+                        that there are no conflicts between the 2 branches and GIT can merge them.  Go 
                         ahead and click 'Create Pull Request.'
                     </p>
 
@@ -680,7 +682,7 @@
 
                     <p>
                         Now you will see a purple Merged icon and Github will tell you the pull request 
-                        was succesfully merged.  There is a 'Delete Branch' button.  We don't need the day3 
+                        was successfully merged.  There is a 'Delete Branch' button.  We don't need the day3 
                         branch anymore so go ahead and delete it.  If you need it back there is an undo
                         button.  Now go ahead and click the blue link to the repository or find the 'Code' 
                         tab and click it.  Open the index.html file.  Find the now changed title 
@@ -699,7 +701,7 @@
             
             <article>
                 <p>
-                    Ok now we have succesfully created a pull request and merged it.  Our Github repository
+                    Ok, now we have successfully created a pull request and merged it.  Our Github repository
                     now has the updated title.  But our local repository is not updated.  So go back to 
                     the terminal and switch back to the master branch.  Now enter <code>git pull origin
                         master</code>.           
@@ -730,7 +732,13 @@
                     <img src="images/final_steps/delete_branch.png" alt="delete day3 branch">
 
                 <p>
-                    Now there is just one more thing that you need to do.  Use GIT!    
+                        We don't need to delete our branch. But it can quickly become confusing and cluttered 
+                        if you let old branches you don't need hang around. When in doubt, consider what you 
+                        did in this branch and whether you might change your mind about the changes. When I do 
+                        this I often find it much easier to delete the branch. And don't forget, you can always 
+                        get the branch back if you change your mind about it. After all, GIT is a version 
+                        Control system.
+                        Now there is just one more thing that you need to do. Get out there and use GIT!   
                 </p>
                 
             </article>
