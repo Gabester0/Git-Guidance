@@ -69,16 +69,11 @@ body {
 
 #navbar a {
   text-decoration: none;
+  color: #3c323f;
 }
-
 
 .current {
   background-color: #3c323f;
-}
-.current a {
-  color: white;
-  text-decoration: none;
-  opacity: 0.8;
 }
 
 .current a:link,
@@ -86,8 +81,9 @@ body {
 .current a:hover,
 .current a:focus,
 .current a:active {
-  color: white;
+  color: white !important;
   opacity: 0.8;
+  text-decoration: none;
 }
 
 .open {
